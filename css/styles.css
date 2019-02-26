@@ -1,0 +1,748 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background-color: #ffffff;
+  /* padding-bottom: 100px; */
+  transition: all .5s;
+  /* margin-top: 50px !important;
+  background-color: rgba(225, 197, 172, .3); */
+  color: #222;
+
+}
+
+a {
+  color: #000;
+}
+
+b {
+  font-weight: 700 !important;
+}
+
+main {
+  /*width: 90%;
+  margin: 0 auto;
+  max-width: 1150px;*/
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p {
+  letter-spacing: .01em;
+}
+
+/**
+  ----- MENU -----
+**/
+
+.Menu {
+  text-align: right;
+  /* border-bottom: 1px solid #e5e5e5; */
+  position: relative;
+  /* background: #fff; */
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  /* height: 75px; */
+}
+
+.Menu-item {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 30px;
+}
+
+.Menu-item--mobile {
+  display: none;
+}
+
+.Container--menu {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 20px;
+}
+
+.daniel {
+}
+
+#logo {
+  float: left;
+  padding: 20px 0 15px 0;
+}
+
+#Container-article--1, #Container-article--2, #Container-article--3, #Container-article--4, #Elliewood-text--1, #Elliewood-image--1, #Elliewood-container--1, #Elliewood-container--2, #Elliewood-container--3,.Elliewood-text--2, #Elliewood-image--2, .Elliewood-text--3, .Elliewood-text--4, .Elliewood-text--5, #Elliewood-block--1, #Elliewood-block--2, #Elliewood-block--3, #Elliewood-block--4, #Elliewood-block--5, #Elliewood-block--6, #Elliewood-block--7, #Elliewood-block--8, #Elliewood-block--9, #Elliewood-block--10, #Elliewood-container--4, #Elliewood-container--5, #Elliewood-container--6, #Elliewood-container--7, #Elliewood-container--8, #Elliewood-container--9, #Elliewood-quote--1, #Elliewood-quote--2, #Elliewood-quote--3, #Elliewood-container--10 {
+  opacity: 0;
+  transition: opacity .65s;
+}
+
+#Elliewood-image--1, #Elliewood-image--2, .Elliewood-text--3, #Elliewood-block--1, .Elliewood-text--5, #Elliewood-block--6 {
+  animation-delay: .2s;
+}
+
+#Elliewood-block--2, #Elliewood-block--8 {
+  animation-delay: .35s;
+}
+
+#Elliewood-block--3, #Elliewood-block--9 {
+  animation-delay: .5s;
+}
+
+#Elliewood-block--4, #Elliewood-block--10 {
+  animation-delay: .75s;
+}
+
+#Elliewood-block--5, .Container-line {
+  animation-delay: .9s;
+}
+
+#Elliewood-block--7  {
+  animation-delay: 1s;
+}
+
+
+
+/**
+  ---- BUTTONS -----
+  **/
+
+.Button {
+  font-size: 18px;
+  text-align: center;
+  /* -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.07);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.07);
+  box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.2); */
+  border: 2px solid #222;
+  border-radius: 4px;
+  position: relative;
+}
+
+.Button-lg {
+  width: 225px;
+  padding: 20px 10px;
+  background: #222;
+  color: #fff;
+  border: none;
+}
+
+.Button-md, .Button-md--noHover {
+  width: 170px;
+  padding: 20px 10px;
+  transition: all .25s;
+}
+
+.Button-sm {
+  width: 140px;
+  font-size: 14px;
+  padding: 15px 10px;
+  transition: all .25s;
+}
+
+.Button-md:hover, .Button-sm:hover {
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+
+.Button-next {
+  float: right;
+}
+
+/**
+  ----- CONTAINERS -----
+  **/
+
+.Container {
+  position: relative;
+}
+
+.Container-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.Container-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.Container-flex--flexStart {
+  justify-content: flex-start !important;
+}
+
+
+/**
+  ----- HOME -----
+**/
+
+.Container--main {
+   height: 800px;
+   background: url("../images/home/daniel-3.jpg") no-repeat right center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  	background-size: cover;
+}
+
+/**
+  ----- ABOUT -----
+**/
+
+
+.Container--about {
+    height: 500px;
+}
+
+.Container--about p {
+    margin: 0 auto;
+}
+
+
+/**
+   ----- PROJECTS -----
+**/
+
+.Container-title {
+  top: 30px;
+  left: 50px;
+  transform: rotate(-90deg);
+}
+
+.Container-title::after {
+  content: '';
+  /* transform: rotate(-90deg); */
+  width: 100px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.Container--project {
+  transition: all .5s;
+  /* background: #222; */
+}
+
+.Container-flex {
+  display: flex;
+  z-index: 100;
+  position: relative;
+  justify-content: space-between;
+}
+
+.Container-text {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  z-index: 5;
+}
+
+.Container-pic {
+  /* opacity: 0; */
+  transition: opacity 1s;
+  animation-delay: .1s;
+  animation-duration: 1.5s;
+  position: relative;
+
+}
+
+.Container-pic--xlg {
+  width: 65%;
+}
+
+.Container-pic--lg {
+  width: 55%;
+}
+
+.Container-pic--left {
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.Container-pic img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 30px 0px rgba(25,25,25,.2);
+  /* opacity: 0; */
+  animation-delay: .25s !important;
+}
+
+.Container-stat img {
+  width: 100%;
+  height: 100%;
+}
+
+.Container-pic--md {
+  width: 50%;
+  box-shadow: 0 4px 20px 0px rgba(25,25,25,.18);
+  margin-left: 5%;
+}
+
+.Container-pic--md img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Container-pic--caseLeft {
+  width: 45%;
+  /* box-shadow: 0 4px 20px 0px rgba(25,25,25,.18); */
+  margin-right: 15%;
+}
+
+.Container-pic--caseRight {
+  width: 45%;
+  /* box-shadow: 0 4px 20px 0px rgba(25,25,25,.18); */
+  margin-left: 15%;
+}
+
+.Container--project .Button {
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+.Pane {
+  position: absolute;
+  z-index: -1;  
+  border-radius: 2px;
+  /* opacity: 0; */
+}
+
+.Pane--lg {
+  width: 100%;
+  height: 100%;
+  right: -7%;
+  top: calc(-.07 * 605px);
+}
+
+.Pane--lg_alt {
+  width: 95%;
+  height: 80%;
+  right: 0%;
+  top: 10%;
+}
+
+.Pane--left {
+  right: auto;
+  left: calc(-.07 * 605px);;
+}
+
+.Container-block-sm {
+  vertical-align: top;
+  padding-top: 50px;
+}
+
+.Container-block-sm img {
+  display: block;
+  border: 1px solid #b5b5b5;
+  border-radius: 3px;
+  box-shadow: 0 4px 30px 0px rgba(25,25,25,.25);
+
+
+}
+
+.Container--social {
+  justify-content: flex-start !important;
+}
+
+.Container--social img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+footer {
+  /* background: #222; */
+  /* color:#555; */
+}
+
+
+
+/******************************************
+
+------ CASE STUDY ------
+
+********************************************/
+
+.Container--projectInfo {
+  bottom: 0;
+}
+
+.Container--caseStudy {
+
+}
+
+.Container-infoBlock {
+  /* width: 350px; */
+  height: 200px;
+  /* margin: 0 auto; */
+  /* box-shadow: 0 4px 25px 0px rgba(25,25,25,.25); */
+  border-radius: 5px;
+  z-index: 1;
+}
+
+#Container-infoBlock--1 p, #Container-infoBlock--2 .Container-flex p, #Elliewood-container--9 p, #Elliewood-container--11 p, #Goldman-container--3 p, #Goldman-container--4 p, #Mindbrush-container--3 p {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Container-infoBlock-title {
+  top: 125% !important;
+  transform: none;
+}
+
+.Container-infoBlock--small {
+  width: 125px;
+  height: 125px;
+  box-shadow: 0 4px 25px 0px rgba(25,25,25,.25);
+}
+
+.Container-infoBlock--lg {
+  width: 250px;
+  height: 250px;
+}
+
+.Container-line {
+  height: 1px;
+  left: 0;
+  top: 50%;
+}
+
+.Container-line--arrow {
+  height: 1px;
+  left: 0;
+  bottom: 20%;
+}
+
+.Container-line--left {
+  width: 2px;
+  height: 30%;
+  left: 10%;
+}
+
+.Container-line--bottom {
+  width: 80%;
+  height: 2px;
+  left: 10%;
+}
+
+
+.Container-line--right {
+  width: 2px;
+  height: 30%;
+  right: 10%;
+  left: auto;
+}
+
+.Container-line--middle {
+  width: 2px;
+  height: 20%;
+  left: 50%;
+  bottom: 0;
+}
+
+.Container-pics img {
+  height: 100%;
+}
+
+.Container-infoDesc {
+  bottom: -25%;
+  text-align: center;
+  width: 100%;
+}
+
+.Container-infoBlock-pic {
+  /* opacity: 0; */
+  width: 55px;
+}
+
+.Container-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.Container-article  {
+  height: 275px;
+}
+
+@media screen and (max-width: 1350px) {
+  .Container--main {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .Pane--lg {
+    right: -5%;
+    top: calc(-.05 * 605px);
+  }
+
+  .Pane--left {
+    left: -5%;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .Container--main h1 {
+    padding-top: 50px;
+    font-size: 60px;
+  }
+
+  .Container--main .Button {
+    margin-top: 40px;
+  }
+
+  .Container--description h3 {
+    font-size: 32px;
+  }
+
+  .Container--description p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .Menu-item {
+    font-size: 16px;
+  }
+
+  .Container--main {
+    height: 650px;
+  }
+
+  .Container--main .Container-inner {
+    width: 50%;
+  }
+
+  .Container--main p {
+    font-size: 20px;
+  }
+
+  .Container--project .Container-text h3 {
+    font-size: 28px;
+  }
+
+  .Container--project .Container-text h5 {
+    font-size: 12px;
+  }
+
+  .Container--project .Container-text p {
+    font-size: 18px;
+  }
+
+  .Container--project .Button {
+    font-size: 14px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Container--main h1 {
+    font-size: 55px;
+  }
+
+  .Container--main p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Menu-item {
+    /* font-size: 14px; */
+  }
+
+  .Container--main {
+    height: 600px;
+  }
+
+  .Container--main h1 {
+    font-size: 50px;
+  }
+
+  .Container--main p {
+    font-size: 18px;
+  }
+
+  .Button-lg {
+    width: 190px;
+    font-size: 14px;
+  }
+
+  .Button-md {
+    width: 160px;
+  }
+
+  .Container--project .Container-text h3 {
+    margin-top: 10px;
+    font-size: 26px;
+  }
+
+  .Container--project .Container-text p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .Pane {
+    display: none;
+  }
+
+  .Container--secondary h2 {
+    font-size: 36px;
+  }
+
+  .Container--secondary p {
+    font-size: 22px;
+  }
+
+  /* CASE STUDY */
+
+  .Container--caseStudy, .Container--description {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Container--main {
+    height: 550px;
+  }
+
+  .Container--main h1 {
+    padding-top: 25px;
+    /* margin-top: 40px; */
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .Container--main {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+
+  /* TOP */
+
+  #resume, #about, #portfolio, #contact{
+    display: none;
+  }
+
+  .Menu-item--mobile {
+    width: 20px;
+    padding: 20px 0;
+    display: inline-block;
+  }
+
+  .Container--main {
+    padding-top: 0;
+    padding-bottom: 100px;
+    height: 100%;
+    background: none;
+    background-color: #f3e8db !important;
+  }
+
+  .Menu {
+    background-color: #f3e8db !important;
+  }
+
+  .Container-overlay {
+    position: static;
+  }
+
+  .Container--main h1 {
+    padding-top: 30px;
+    margin: 0;
+  }
+
+  .Container--main p {
+    font-size: 20px;
+  }
+
+  .Container--main .Container-overlay {
+    background-color: transparent;
+  }
+
+  .Container--main .Container-inner {
+    width: 100%;
+  }
+
+  /* PROJECTS */
+
+  .Container--project .Container-flex {
+    flex-direction: column-reverse;
+  }
+
+  .Container--project .Container-flex--alt {
+    flex-direction: column;
+  }
+
+  .Container-pic--lg, .Container-text, .Container--secondary p {
+    width: 100% !important;
+  }
+
+  .Container--project h5 {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  .Container--project h3 {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+
+  .Container--project p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .Container--project .Button {
+    position: static;
+    margin-top: 30px;
+  }
+
+  /* MISC */
+
+  .Container--secondary h2 {
+    font-size: 26px;
+  }
+
+  .Container--secondary p {
+    font-size: 20px;
+  }
+
+
+  .Container--writing .Container-flex {
+    flex-direction: column;
+  }
+
+  .Container--writing .Container-block-sm {
+    width: 100% !important;
+  } 
+
+  footer .u-width70 {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 470px) {
+  .Container--main h1 {
+    /* margin-top: 20px; */
+  }
+}
+
+
+
