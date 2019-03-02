@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,700" rel="stylesheet">
 
     <title> </title>
-    <link rel='stylesheet' href='css/styles.css' type='text/css' />
     <link rel='stylesheet' href='css/utilities.css' type='text/css' />
+    <link rel='stylesheet' href='css/styles.css' type='text/css' />
     <link rel='stylesheet' href='css/normalize.css' type='text/css' />
     <link rel='stylesheet' href='css/animate.css' type='text/css' />
 </head>
@@ -18,21 +18,24 @@
   
 <main>
 
-    <nav class="Menu">
-        <div class="Container--menu" id="Menu--elliewood">
-            <div class="Menu-item u-fontSize-h5 u-fontWeight-bold u-fontPlayfair" id="logo">daniel.</div>
-            <div class="Menu-item u-fontWeight-light">Resume</div>
-            <div class="Menu-item u-fontWeight-light">About</div>
-            <div class="Menu-item u-fontWeight-light">Portfolio</div>
-            <div class="Menu-item Button Button-md u-fontPlayfair u-fontWeight-bold">Contact</div>
+    <nav class="Menu u-text-black">
+        <div class="Container--menu">
+          <div class="Menu-item u-fontSize-h5 u-fontWeight-bold u-fontPlayfair" id="logo"><span class="daniel">daniel</span>autry.</div>
+          <div class="Menu-item u-fontWeight-light" id="resume">Resume</div>
+          <div class="Menu-item u-fontWeight-light" id="about">About</div>
+          <div class="Menu-item u-fontWeight-light" id="portfolio">Portfolio</div>
+          <div class="Menu-item Button Button-md u-fontPlayfair u-fontWeight-bold" id="contact">Contact</div>
+          <div class="Menu-item Menu-item--mobile u-fontPlayfair" id="menu-mobile">
+            <img class="u-width100" src="images/home/menu-mobile.png" alt="">
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <div class="Container Container--project Container--caseStudy u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto u-marginT50" id="CaseStudy--Elliewood">
+    <div class="Container Container--project Container--caseStudy Container--top u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto u-marginT50 u-boxShadow3 u-borderR5" id="CaseStudy--Elliewood">
         <div class="Container-wrapper">
           <div class="Container-flex" id="CaseStudy--1">
             <div class="Container-text u-width40" id="Container-text--2">
-              <h6 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">Behaviorial Researcher</h6>
+              <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">Behaviorial Researcher</h5>
               <h3 class="u-fontSize-h3 u-fontPlayfair u-marginT20">Elliewood Project</h3>
               <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">
                   A deep-dive into the college mental health care problem space.
@@ -40,29 +43,31 @@
                   <br>
                   Charlottesville needed skilled graduates to work on big problems. Yet cultural and financial barriers discouraged students from taking the non-traditional path.
               </p>
-              <div class="Container-flex Container-flex--flexStart u-width100 u-marginT20 u-displayNone">
-                <div class="u-width45">
-                    <h6 class="u-fontSize-h6">Duration:</h6>
-                    <h6 class="u-fontSize-h6 u-marginT10">Client:</h6>
-                    <h6 class="u-fontSize-h6 u-marginT10"> Role:</h6>
-                    <h6 class="u-fontSize-h6 u-marginT10"> What I Did:</h6>
-                </div>
-                <div>
-                    <h6 class="u-fontSize-h6 u-fontWeight-light">10 mo.</h6>
-                    <h6 class="u-fontSize-h6 u-marginT10 u-fontWeight-light">Research</h6>
-                    <h6 class="u-fontSize-h6 u-marginT10 u-fontWeight-light">UX/UI &#183; Behaviorial Research &#183; Customer Discovery</h6>
-                    <h6 class="u-fontSize-h6 u-marginT10 u-fontWeight-light u-lineHeight-1_5">Performed 60+ interviews, compiled research, facilitated design sprints. </h6>
-                </div>
-            </div>
-            </div><div class="Container-pic Container-pic--lg">
+            </div><div class="Container-pic Container-pic--lg u-positionR">
                 <img class="Container-picImg" id="Container-pic--2" src="images/elliewood/jumpbox.png"/>
-                <div class="Pane Pane--lg u-bg-lightBlue" id="Pane--2"></div>
+                <div class="Pane Pane--lg Pane--caseStudy u-bg-lightBlue" id="Pane--2"></div>
               </div>
           </div>
         </div>
       </div>
 
-      <div class="Container Container--secondary u-paddingT150 u-paddingB50">
+      <div class="Container Container--project Container--caseStudy Container--info u-paddingV50 u-marginT100 u-width70 u-marginAuto u-borderR5 u-border-lightGrey" id="CaseStudy">
+        <div class="Container-wrapper">
+          <div class="Container-flex" id="">
+            <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
+                <b>Role: </b>  &nbsp;Design, Behaviorial Research, Design Sprints, Rapid Prototyping
+            </div>
+            <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
+                <b>Team: </b>  &nbsp;Daniel Autry (Solo)
+            </div>
+            <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
+                <b>Duration: </b>  &nbsp;Feb 2018 (12 months)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Container Container--secondary Container--articles u-paddingT150 u-paddingB50">
         <div class="Container-wrapper">
             <div class="Container-flex">
                 <div class="u-width50 Container-article u-positionR" id="Container-article--1">
@@ -73,7 +78,7 @@
                         UVA alumnus using his own battle with depression to help current students
                     </h3>
                     <a href="https://news.virginia.edu/content/uva-alumnus-using-his-own-battle-depression-help-current-students" target="_blank">
-                        <div class="Button Button-sm u-fontPlayfair u-marginT20">
+                        <div class="Button Button-sm u-fontPlayfair u-marginT20 u-fontWeight-bold">
                             Read article
                         </div>
                     </a>
@@ -86,7 +91,7 @@
                         How my depression became <br> my career
                     </h3>
                     <a href="https://medium.com/@dxautry/how-my-depression-became-my-career-ddf80c2cc5fd" target="_blank">
-                    	<div class="Button Button-sm u-fontPlayfair u-marginT20">
+                    	<div class="Button Button-sm u-fontPlayfair u-marginT20 u-fontWeight-bold">
                     	    Read article
                     	</div>
                     </a>
@@ -101,7 +106,7 @@
                         U.Va. alumnus hopes to develop app to combat mental illness
                     </h3>
                     <a href="http://www.cavalierdaily.com/article/2019/01/u-va-alumnus-hopes-to-develop-app-to-combat-mental-illness" target="_blank">
-                        <div class="Button Button-sm u-fontPlayfair u-marginT20">
+                        <div class="Button Button-sm u-fontPlayfair u-marginT20 u-fontWeight-bold">
                             Read article
                         </div>
                     </a>
@@ -114,7 +119,7 @@
                         HackCville announces new fellowship to help UVA entrepreneurs
                     </h3>
                     <a href="http://www.nbc29.com/story/37781407/hackcville-announces-new-fellowship-to-help-uva-entrepreneurs" target="_blank">
-                        <div class="Button Button-sm u-fontPlayfair u-marginT20">
+                        <div class="Button Button-sm u-fontPlayfair u-marginT20 u-fontWeight-bold">
                             Read article
                         </div>
                     </a>
@@ -123,7 +128,7 @@
         </div>
     </div>
 
-    <div class="Container Container--secondary u-paddingV150">
+    <div class="Container Container--secondary_caseStudy u-paddingV100">
         <div class="Container-wrapper">
             <div class="Container-flex u-marginT20">
                 <div class="Container-text u-width90" id="Elliewood-text--overview">
@@ -152,9 +157,9 @@
         </div>
     </div>
 
-    <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto">
+    <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5">
         <div class="Container-wrapper">
-            <div class="Container-flex u-marginT20">
+            <div class="Container-flex">
                 <div class="Container-text u-width60" id="Elliewood-text--1">
                         <!-- <div class="Pane Pane--lg u-bg-lightBlue" id="Pane--2"></div> -->
                     <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
@@ -177,9 +182,9 @@
         </div>
     </div>
     
-    <div class="Container u-paddingT150 u-paddingB50">
+    <div class="Container Container--stat u-paddingT150 u-paddingB50">
             <div class="Container-wrapper">
-                <div class="Container-flex" id="Elliewood-container--1">
+                <div class="Container-flex Container-flex--alt" id="Elliewood-container--1">
                     <div class="Container-stat Container-pic--caseLeft Container-pic--left">
                         <img class="Container-picImg" id="Container-pic--2" src="images/elliewood/elliewood-2.svg"/>
                     </div>
@@ -197,7 +202,7 @@
                 </div>
             </div>
         </div>
-        <div class="Container u-paddingV50">
+        <div class="Container Container--stat u-paddingV50">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Elliewood-container--2">
                     <div class="Container-text u-width40" id="Container-text--2">
@@ -215,9 +220,9 @@
                 </div>
             </div>
         </div>
-        <div class="Container u-paddingT50 u-paddingB150">
+        <div class="Container Container--stat u-paddingT50 u-paddingB150">
             <div class="Container-wrapper">
-                <div class="Container-flex" id="Elliewood-container--3">
+                <div class="Container-flex Container-flex--alt" id="Elliewood-container--3">
                     <div class="Container-stat Container-pic--caseLeft Container-pic--left">
                         <img class="Container-picImg" id="Container-pic--2" src="images/elliewood/doctors.svg"/>
                     </div>
@@ -234,7 +239,7 @@
             </div>
         </div>
         
-      <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto">
+      <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width60">
@@ -259,7 +264,7 @@
             </div>
           </div>
 
-          <div class="Container Container--secondary u-paddingT100">
+          <div class="Container Container--secondary_caseStudy u-paddingT100">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width70">
@@ -275,7 +280,7 @@
             </div>
           </div>
 
-          <div class="Container Container--secondary u-paddingB100">
+          <div class="Container Container--secondary_infoBlocks Container--secondary_infoBlocks-sm u-paddingB100">
             <div class="Container-wrapper">
                 <div class="Container-map">
                    <div class="Container-flex u-positionR u-marginT75" id="Container-infoBlock--1">
@@ -306,7 +311,7 @@
             </div>
           </div>
 
-          <div class="Container Container--secondary u-paddingV100 u-border-grey--T" id="Elliewood-container--4">
+          <div class="Container Container--secondary_caseStudy Container--secondary_infoBlocks u-paddingV100 u-border-grey--T" id="Elliewood-container--4">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width70">
@@ -334,7 +339,7 @@
                         <div class="Container-infoBlock-pic u-marginAuto u-marginT50">
                             <img class="u-width100" src="images/elliewood/student.png" alt="">
                         </div>
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width100 u-marginAuto u-width80 u-lineHeight-1_5 u-positionA">
+                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width100 u-marginAuto u-lineHeight-1_5">
                             Students
                         </p>
                     </div>
@@ -400,29 +405,29 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary u-paddingT50 u-paddingB150 u-border-grey--T">
+        <div class="Container Container--secondary_caseStudy Container--secondary_infoBlocks u-paddingT50 u-paddingB150 u-border-grey--T" id="Container--interviews">
             <div class="Container-wrapper">
                 <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
                     Total Interviews
                 </h5>
                 <div class="Container-flex u-marginT50">
-                    <div class="Container-stat u-width18">
+                    <div class="Container-infoBlock u-width18">
                         <h3 class="u-fontPlayfair u-fontSize-h2">35</h3>
                         <p class="u-marginT15 u-fontSize-p3 u-lineHeight-1_5">therapists at different universities.</p>
                     </div>
-                    <div class="Container-stat u-width18">
+                    <div class="Container-infoBlock u-width18">
                         <h3 class="u-fontPlayfair u-fontSize-h2">12</h3>
                         <p class="u-marginT15 u-fontSize-p3 u-lineHeight-1_5">different college clinic directors.</p>
                     </div>
-                    <div class="Container-stat u-width18">
+                    <div class="Container-infoBlock u-width18">
                         <h3 class="u-fontPlayfair u-fontSize-h2">52</h3>
                         <p class="u-marginT15 u-fontSize-p3 u-lineHeight-1_5">students at the University of Virginia.</p>
                     </div>
-                    <div class="Container-stat u-width18">
+                    <div class="Container-infoBlock u-width18">
                         <h3 class="u-fontPlayfair u-fontSize-h2">7</h3>
                         <p class="u-marginT15 u-fontSize-p3 u-lineHeight-1_5">resident dorm advisors.</p>
                     </div>
-                    <div class="Container-stat u-width18">
+                    <div class="Container-infoBlock u-width18">
                         <h3 class="u-fontPlayfair u-fontSize-h2">4</h3>
                         <p class="u-marginT15 u-fontSize-p3 u-lineHeight-1_5">psychologists in behaviorial research.</p>
                     </div>
@@ -431,7 +436,7 @@
             </div>
         </div>
 
-        <div class="Container Container--description u-paddingV100 u-bg-dukeBlue u-text-white u-width90 u-marginAuto">
+        <div class="Container Container--secondary_college Container--description u-paddingV100 u-bg-dukeBlue u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5" id="Container--duke">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Elliewood-container--5">
                     <div class="Container-text u-width60">
@@ -455,7 +460,7 @@
             </div>
           </div>
 
-          <div class="Container Container--secondary u-paddingV100 u-border-grey--T">
+          <div class="Container Container--secondary Container--secondary_caseStudy Container--secondary_college u-paddingV100 u-border-grey--T" id="Container--penn">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Elliewood-container--6">
                     <div class="Container-text u-width60">
@@ -483,7 +488,7 @@
             </div>
           </div>
 
-          <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto">
+          <div class="Container Container--description Container--secondary_college u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5" id="Container--texas">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Elliewood-container--7">
                     <div class="Container-text u-width60">
@@ -508,7 +513,7 @@
             </div>
           </div>
 
-          <div class="Container Container--secondary u-paddingV100 u-border-grey--B">
+          <div class="Container Container--secondary Container--secondary_caseStudy Container--secondary_college u-paddingV100 u-border-grey--B" id="Container--va">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Elliewood-container--8">
                     <div class="Container-text u-width60">
@@ -534,7 +539,7 @@
           </div>
 
 
-        <div class="Container Container--secondary u-paddingV100">
+        <div class="Container Container--secondary Container--secondary_infoBlocks Container--secondary_infoBlocks-sm u-paddingV100">
             <div class="Container-wrapper">
                 <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
                     Key Insights
@@ -593,7 +598,7 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary u-border-grey--T u-paddingV100" id="Container-infoBlock--2">
+        <div class="Container Container--secondary Container--secondary_infoBlocks Container--secondary_infoBlocks-sm Container--secondary_caseStudy u-border-grey--T u-paddingV100" id="Container-infoBlock--2">
             <div class="Container-wrapper">
                 <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
                     Return to Journey Map
@@ -629,7 +634,7 @@
             </div>
         </div>
 
-        <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto">
+        <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width60">
@@ -650,7 +655,7 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary u-paddingV100">
+        <div class="Container Container--secondary Container--secondary_caseStudy Container--secondary_infoBlocks Container--secondary_infoBlocks-sm u-paddingV100">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Elliewood-container--10">
                     <div class="Container-text u-width70">
@@ -667,25 +672,25 @@
                     <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width20 u-boxShadow2">
                         <!-- put icon here -->
                         <!-- look at email sent to directors and get findings -->
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width80 u-marginAuto u-lineHeight-1_5 u-positionA">The solution must be where the student lives. </p>
+                        <p class="u-fontSize-p3 u-displayBlock u-textCenter u-width80 u-marginAuto u-lineHeight-1_5 u-positionA">The solution must be where the student lives. </p>
                     </div>
                     <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width20 u-boxShadow2">
                         <!-- put icon here -->
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-marginAuto u-width80  u-lineHeight-1_5 u-positionA">It may not be in the form of an app.</p>
+                        <p class="u-fontSize-p3 u-displayBlock u-textCenter u-marginAuto u-width80  u-lineHeight-1_5 u-positionA">It may not be in the form of an app.</p>
                     </div>
                     <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width20 u-boxShadow2">
                         <!-- put icon here -->
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-marginAuto u-width80 u-lineHeight-1_5 u-positionA">Messaging and campaigns seems like a very promising approach. </p>
+                        <p class="u-fontSize-p3 u-displayBlock u-textCenter u-marginAuto u-width80 u-lineHeight-1_5 u-positionA">Messaging and campaigns seems like a very promising approach. </p>
                     </div>
                     <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width20 u-boxShadow2">
                         <!-- put icon here -->
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-marginAuto u-width80 u-lineHeight-1_5 u-positionA">Students must be able to trust the solution.</p>
+                        <p class="u-fontSize-p3 u-displayBlock u-textCenter u-marginAuto u-width80 u-lineHeight-1_5 u-positionA">Students must be able to trust the solution.</p>
                     </div>
                 </div>     
             </div>
         </div>
 
-        <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto">
+        <div class="Container Container--description u-paddingV100 u-bg-black u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5">
             <div class="Container-wrapper">
                 <div class="Container-flex u-marginT20">
                     <div class="Container-text u-width70">
@@ -709,16 +714,35 @@
                 </div>
             </div>
         </div>
-        <div class="Container Container--project u-paddingT125">
+        <div class="Container Container--project Container--project_solution u-paddingT100">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Container--2">
                     <div class="Container-text u-width35" id="Container-text--2">
                         <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">Concept</h5>
-                        <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT20">Mindbrush Health</h3>
+                        <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT20">Jumpbox Wellness</h3>
                         <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">A college mental health app to leverage support networks and promote self-care.</p>
                         <a href="case-study-2.html">
                             <div class="Button Button-md u-fontPlayfair">
-                                View Case Study
+                                Coming soon
+                            </div>
+                        </a>
+                    </div>
+                    <div class="Container-pic Container-pic--lg">
+                        <img class="Container-picImg" id="Container-pic--2" src="images/elliewood/jumpbox.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Container Container--project Container--project_solution u-paddingT125">
+            <div class="Container-wrapper">
+                <div class="Container-flex" id="Container--2">
+                    <div class="Container-text u-width35" id="Container-text--2">
+                        <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">Concept</h5>
+                        <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT20">Recharge Wellness Studio</h3>
+                        <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">A college mental health app to leverage support networks and promote self-care.</p>
+                        <a href="case-study-2.html">
+                            <div class="Button Button-md u-fontPlayfair">
+                                Coming soon
                             </div>
                         </a>
                     </div>
@@ -728,7 +752,7 @@
                 </div>
             </div>
         </div>
-        <div class="Container Container--project u-paddingT100">
+        <div class="Container Container--project Container--project_solution u-paddingT100">
             <div class="Container-wrapper">
                 <div class="Container-flex" id="Container--2">
                     <div class="Container-text u-width35" id="Container-text--2">
@@ -737,7 +761,7 @@
                         <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">A college mental health app to leverage support networks and promote self-care.</p>
                         <a href="case-study-2.html">
                             <div class="Button Button-md u-fontPlayfair">
-                                View Case Study
+                                Coming soon
                             </div>
                         </a>
                     </div>
@@ -745,24 +769,15 @@
                         <img class="Container-picImg" id="Container-pic--2" src="images/elliewood/jumpbox.png"/>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="Container Container--project u-paddingT100">
-            <div class="Container-wrapper">
-                <div class="Container-flex" id="Container--2">
-                    <div class="Container-text u-width35" id="Container-text--2">
-                        <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">Concept</h5>
-                        <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT20">Jumpbox Wellness</h3>
-                        <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">A college mental health app to leverage support networks and promote self-care.</p>
-                        <a href="case-study-2.html">
-                            <div class="Button Button-md u-fontPlayfair">
-                                View Case Study
-                            </div>
-                        </a>
+                <div class="u-paddingT150 u-paddingB100 u-floatR">
+                    <div class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
+                        Next: <span class="u-text-darkBlue">Mindbrush</span>
                     </div>
-                    <div class="Container-pic Container-pic--lg">
-                        <img class="Container-picImg" id="Container-pic--2" src="images/elliewood/jumpbox.png"/>
-                    </div>
+                    <a href="mindbrush.html" class="u-positionS">
+                        <div class="Button Button-sm u-fontPlayfair u-marginT30 u-positionS u-floatR">
+                            Read case study
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

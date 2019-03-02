@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,700" rel="stylesheet">
 
     <title> </title>
-    <link rel='stylesheet' href='css/styles.css' type='text/css' />
     <link rel='stylesheet' href='css/utilities.css' type='text/css' />
+    <link rel='stylesheet' href='css/styles.css' type='text/css' />
     <link rel='stylesheet' href='css/normalize.css' type='text/css' />
     <link rel='stylesheet' href='css/animate.css' type='text/css' />
 </head>
@@ -26,32 +26,30 @@
   <!-- <div class="Pane Pane--main"></div> -->
   
 
-<main>
+<main id="Mindbrush-container">
 
-    <nav class="Menu u-bg-navy">
+    <nav class="Menu u-text-black">
         <div class="Container--menu">
-            <a href="/" class="u-text-white">
-                <div class="Menu-item u-fontSize-h5 u-fontWeight-bold u-fontPlayfair" id="logo">daniel.</div>
-            </a>
-            <a href="/" class="u-text-white">
-                <div class="Menu-item u-fontWeight-light">Resume</div>
-            </a>
-            <div class="Menu-item u-fontWeight-light">About</div>
-            <a href="/" class="u-text-white">
-                <div class="Menu-item u-fontWeight-light">Portfolio</div>
-            </a>
-            <div class="Menu-item Button Button-md u-fontPlayfair u-border-white">Contact</div>
+          <div class="Menu-item u-fontSize-h5 u-fontWeight-bold u-fontPlayfair" id="logo"><span class="daniel">daniel</span>autry.</div>
+          <div class="Menu-item u-fontWeight-light" id="resume">Resume</div>
+          <div class="Menu-item u-fontWeight-light" id="about">About</div>
+          <div class="Menu-item u-fontWeight-light" id="portfolio">Portfolio</div>
+          <div class="Menu-item Button Button-md u-fontPlayfair u-fontWeight-bold" id="contact">Contact</div>
+          <div class="Menu-item Menu-item--mobile u-fontPlayfair" id="menu-mobile">
+            <img class="u-width100" src="images/home/menu-mobile.png" alt="">
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <div class="Container Container--project Container--caseStudy u-paddingV100 u-bg-navy u-text-white" id="CaseStudy">
+    <div class="Container Container--project Container--caseStudy Container--top Container--mb u-paddingV100 u-marginT50 u-bg-navy u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5" id="CaseStudy">
         <div class="Container-wrapper">
           <div class="Container-flex" id="Container--2">
             <div class="Container-text u-width40" id="Container-text--2">
-              <h6 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">Concept App</h6>
-              <h3 class="u-fontSize-h3 u-fontPlayfair u-marginT20">Mindbrush</h3>
+              <!-- <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">Concept App</h5> -->
+              <h3 class="u-fontSize-h3 u-fontPlayfair u-marginT75 u-width70 u-displayBlock--md"><img class="Container-picImg u-width100" id="Container-pic--2" src="images/mindbrush/logo_onblue.png"/></h3>
+              <h3 class="u-fontSize-h3 u-fontPlayfair u-marginT75 u-width70 u-displayNone--md"><img class="Container-picImg u-width100" id="Container-pic--2" src="images/mindbrush/logo_onwhite.png"/></h3>
               <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">A college mental health app to leverage support networks and promote self-care.</p>
-              <div class="Container-flex Container-flex--flexStart u-width100 u-marginT20">
+              <!-- <div class="Container-flex Container-flex--flexStart u-width100 u-marginT20">
                 <div class="u-width45">
                     <h6 class="u-fontSize-h6">Duration:</h6>
                     <h6 class="u-fontSize-h6 u-marginT10">Client:</h6>
@@ -64,7 +62,7 @@
                     <h6 class="u-fontSize-h6 u-marginT10 u-fontWeight-light">Founder &#183; UX/UI &#183; Product Design </h6>
                     <h6 class="u-fontSize-h6 u-marginT10 u-fontWeight-light u-lineHeight-1_5">Performed behaviorial research, prototyped web application, developed mockups alongside UI designer. </h6>
                 </div>
-            </div>
+            </div> -->
             </div><div class="Container-pic Container-pic--lg">
                 <img class="Container-picImg" id="Container-pic--2" src="images/mindbrush/mindbrush.png"/>
                 <div class="Pane Pane--lg u-bg-darkPurple" id="Pane--2"></div>
@@ -73,7 +71,24 @@
         </div>
       </div>
 
-    <div class="Container Container--secondary u-paddingV150 u-border-grey--B">
+      <div class="Container Container--project Container--caseStudy Container--info u-paddingV50 u-marginT100 u-width70 u-marginAuto u-borderR5 u-border-lightGrey" id="CaseStudy">
+        <div class="Container-wrapper">
+          <div class="Container-flex" id="">
+            <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
+                <b>Role: </b>  &nbsp;Design, User Research, Rapid Prototyper, Technical Lead
+            </div>
+            <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
+                <b>Team: </b>  &nbsp;Daniel Autry, Yash Tekriwal, Emily Yun
+            </div>
+            <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
+                <b>Duration: </b>  &nbsp;Sep 2017 (6 months)
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="Container Container--description u-paddingV100 u-border-grey--B">
         <div class="Container-wrapper">
             <div class="Container-flex u-marginT20">
                 <div class="Container-text u-width60">
@@ -81,27 +96,27 @@
                         Problem
                     </h5>
                     <h3 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_375 u-fontWeight-semibold">
-                        Mental illness has become an epidemic on college campuses.
+                        We noticed that college students don't tru to .
                     </h3>
                     <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30">
-                        Inspired by our battles with mental illness, two friends and I decided to create a solution for encouraging self-care in everyday collegelife.
+                        Inspired by our battles with mental illness, two friends and I decided to create a solution for encouraging self-care in everyday college life.
                         <br>
                         <br>
-                        This project won 1st prize in UVA's Entreprenuership Competition, recieving $1000 in funding.
+                        This project won 1st prize in the University of Virginia's Social Entreprenuership Competition, recieving $1000 in funding.
                         <br>
                         <br>
                         <b>See pitch deck</b>
                     </p>
                 </div>
-                <div class="u-width35 u-marginT75">
+                <div class="u-width35 u-marginT75" id="Mindbrush-image--1">
                     <img class="u-width100" src="images/mindbrush/thought.svg" alt="">
                 </div>
              </div>
         </div>
     </div>
-    <div class="Container u-paddingV150">
+    <div class="Container Container--stat u-paddingT100 u-paddingB50">
             <div class="Container-wrapper">
-                <div class="Container-flex" id="Container--2">
+                <div class="Container-flex Container-flex--alt" id="Container--2">
                     <div class="Container-stat Container-pic--caseLeft Container-pic--left">
                         <img class="Container-picImg" id="Container-pic--2" src="images/mindbrush/child.svg"/>
                     </div>
@@ -117,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <div class="Container u-paddingV150">
+        <div class="Container Container--stat u-paddingV50">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width40" id="Container-text--2">
@@ -135,9 +150,9 @@
                 </div>
             </div>
         </div>
-        <div class="Container u-paddingV150">
+        <div class="Container Container--stat u-paddingT50 u-paddingB150">
             <div class="Container-wrapper">
-                <div class="Container-flex">
+                <div class="Container-flex Container-flex--alt">
                     <div class="Container-stat Container-pic--caseLeft Container-pic--left">
                         <img class="Container-picImg" id="Container-pic--2" src="images/mindbrush/dream.svg"/>
                     </div>
@@ -172,10 +187,10 @@
             </div>
         </div> -->
 
-        <div class="Container Container--secondary u-paddingV150 u-border-grey--T u-bg-offWhite">
+        <div class="Container Container--description Container--secondary_caseStudy u-paddingV150 u-border-grey--T u-bg-navy u-text-white u-width90 u-marginAuto u-boxShadow3 u-borderR5">
             <div class="Container-wrapper">
                 <div class="Container-flex">
-                    <div class="u-width60">
+                    <div class="Container-text u-width60">
                         <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
                             Our Solution
                         </h5>
@@ -183,10 +198,10 @@
                             MindBrush is an app that promotes mental hygiene by making aspects of it a daily routine.
                         </h3>
                         <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30">
-                            I responsible for behaviorial research, strategy, and development of the web application. Our goal was to create an app users could trust in their times of stress, sadness, and affliction.
+                            My responsibilities included behaviorial research, strategy, and the development of the prototypical web application. Our goal was to create an app users could trust in their times of stress, sadness, and affliction.
                         </p> 
                     </div>
-                    <div class="Container-flex u-width35">
+                    <div class="Container-flex u-width35" id="Mindbrush-image--2">
                         <img class="u-width60 u-boxShadow3 u-align-center" src="images/mindbrush/invite.png" alt="">
                         <img class="u-width35 u-boxShadow3 u-align-center" src="images/mindbrush/loading.png" alt="">
                     </div> 
@@ -217,21 +232,21 @@
           </div> -->
 
 
-        <div class="Container Container--secondary u-paddingV150">
+        <div class="Container Container--secondary Container--description u-paddingT150 u-paddingB100" id="Container--resesarch">
             <div class="Container-wrapper">
                 <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
                     Research
                 </h5>
                 <h3 class="u-fontSize-h4 u-marginT30 u-fontPlayfair u-lineHeight-1_375 u-fontWeight-semibold u-width90">
-                    My team performed 100+ interviews.
+                    My team and I performed 100+ interviews.
                 </h3>
-                <p class="u-fontSize-p3 u-lineHeight-1_75 u-fontWeight-light u-marginT30 u-width90">
+                <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30 u-width90">
                     Mental illness is highly stigmatized, and most solutions are prescriptive rather than proactive. Current mental health apps in the market have low retention rates.
                     <br>
                     <br>
                     Often times, messaging such as "Are you feeling depressed today" placed unnecessary stigmas on users.
                 </p>
-                <p class="u-fontSize-p3 u-lineHeight-1_75 u-width90 u-marginT30">
+                <p class="u-fontSize-p2 u-lineHeight-1_75 u-width90 u-marginT30">
                     Students were so overwhelmed with school, extracurriculars, and work, that they often found it difficult to make time for their support networks. They wished for more time to do the things that mattered to them.
                     <br>
                     <br>
@@ -240,7 +255,7 @@
             </div>   
         </div>
 
-        <div class="Container Container--secondary u-paddingV150 u-border-grey--T">
+        <div class="Container Container--secondary_caseStudy Container--secondary_infoBlocks u-paddingT100 u-paddingB150 u-border-grey--T" id="Container--hygiene">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width70">
@@ -262,7 +277,7 @@
                         <div class="Container-infoBlock-pic u-marginAuto u-marginT40">
                             <img class="u-width100" src="images/elliewood/friends.png" alt="">
                         </div>
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width100 u-marginAuto u-width80 u-lineHeight-1_5 u-positionA">
+                        <p class="u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-width90 u-marginAuto u-lineHeight-1_5">
                             Strong Support Network
                         </p>
                     </div>
@@ -270,7 +285,7 @@
                         <div class="Container-infoBlock-pic u-marginAuto u-marginT40">
                             <img class="u-width100" src="images/mindbrush/meditate.png" alt="">
                         </div>
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width100 u-marginAuto u-marginT10 u-lineHeight-1_5">
+                        <p class="u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-width90 u-marginAuto u-marginT10 u-lineHeight-1_5">
                             Meditation & Mindfulness
                         </p>
                     </div>
@@ -278,7 +293,7 @@
                         <div class="Container-infoBlock-pic u-marginAuto u-marginT40">
                             <img class="u-width100" src="images/mindbrush/bed.png" alt="">
                         </div>
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width100 u-marginAuto u-marginT10 u-lineHeight-1_5">
+                        <p class="u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-width90 u-marginAuto u-marginT10 u-lineHeight-1_5">
                             A Good Night's Sleep
                         </p>
                     </div>
@@ -286,7 +301,7 @@
                         <div class="Container-infoBlock-pic u-marginAuto u-marginT40">
                             <img class="u-width100" src="images/mindbrush/nature.png" alt="">
                         </div>
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width100 u-marginAuto u-marginT10 u-lineHeight-1_5">
+                        <p class="u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-width90 u-marginAuto u-marginT10 u-lineHeight-1_5">
                             Spending Time Outdoors
                         </p>
                     </div>
@@ -294,7 +309,7 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary u-paddingV150 u-bg-offWhite">
+        <div class="Container Container--caseStudy  u-paddingV100 u-bg-tan u-width90 u-marginAuto u-boxShadow1 u-borderR5" id="Container--mb_branding">
             <div class="Container-wrapper">
                 <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
                     Branding
@@ -314,7 +329,7 @@
                         </h5>
                         <div class="Container-flex u-justify-start u-marginT50">
                             <div class="Container-infoBlock u-positionR">
-                                <div class="Container-infoBlock--small  u-bg-pink u-marginAuto">
+                                <div class="Container-infoBlock--small Container-infoBlock--color u-bg-pink u-marginAuto">
                                 </div>
                                 <p class="u-fontSize-p3 u-displayBlock u-width100 u-marginT30 u-lineHeight-1_5">
                                     <span class="u-fontWeight-bold u-fontSize-p3 u-textUpper u-letterSpacing_1">
@@ -324,8 +339,8 @@
                                     #f9e6ec 
                                 </p>
                             </div>
-                            <div class="Container-infoBlock u-positionR u-marginL100">
-                                <div class="Container-infoBlock--small  u-bg-darkBlue u-marginAuto">
+                            <div class="Container-infoBlock Container-infoBlock--color u-positionR u-marginL100">
+                                <div class="Container-infoBlock--small Container-infoBlock--color u-bg-darkBlue u-marginAuto">
                                 </div>
                                 <p class="u-fontSize-p3 u-displayBlock u-width100 u-marginT30 u-lineHeight-1_5">
                                     <span class="u-fontWeight-bold u-fontSize-p3 u-textUpper u-letterSpacing_1">
@@ -335,7 +350,7 @@
                                     #333f98
                                 </p>
                             </div>
-                            <div class="Container-infoBlock u-positionR u-width60 u-marginL150">
+                            <div class="Container-infoBlock u-positionR u-width60 u-marginL150" id="font-desktop">
                                 <p class="u-fontSize-h1 u-fontWeight-bold u-width100 u-lineHeight-1_5">
                                     Aa 
                                 </p>
@@ -354,7 +369,7 @@
                         </div>
                         <div class="Container-flex u-justify-start u-marginT50">
                             <div class="Container-infoBlock u-positionR">
-                                <div class="Container-infoBlock--small  u-bg-darkPink u-marginAuto">
+                                <div class="Container-infoBlock--small Container-infoBlock--color u-bg-darkPink u-marginAuto">
                                 </div>
                                 <p class="u-fontSize-p3 u-displayBlock u-width100 u-marginT30 u-lineHeight-1_5">
                                     <span class="u-fontWeight-bold u-fontSize-p3 u-textUpper u-letterSpacing_1">
@@ -365,7 +380,7 @@
                                 </p>
                             </div>
                             <div class="Container-infoBlock u-positionR u-marginL100">
-                                <div class="Container-infoBlock--small  u-bg-navy u-marginAuto">
+                                <div class="Container-infoBlock--small Container-infoBlock--color u-bg-navy u-marginAuto">
                                 </div>
                                 <p class="u-fontSize-p3 u-displayBlock u-width100 u-marginT30 u-lineHeight-1_5">
                                     <span class="u-fontWeight-bold u-fontSize-p3 u-textUpper u-letterSpacing_1">
@@ -376,11 +391,26 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="Container-infoBlock u-positionR u-width60 u-marginL150" id="font-mobile">
+                            <p class="u-fontSize-h1 u-fontWeight-bold u-width100 u-lineHeight-1_5">
+                                Aa 
+                            </p>
+                            <p class="u-fontSize-h4 u-fontWeight-bold u-width100 u-lineHeight-1_5">
+                                Proxima Nova 
+                            </p>
+                            <p class="u-fontSize-p2 u-width100 u-lineHeight-1_75 u-marginT20">
+                                <b>The quick brown fox jumped over the lazy dog.</b>
+                                <br>
+                                <i>The quick brown fox jumped over the lazy dog.</i>
+                                <br>
+                                The quick brown fox jumped over the lazy dog.
+                            </p>
+                        </div>
                         <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold u-paddingT125">
                             Logo Iterations
                         </h5>
                         <div class="Container-flex u-positionR u-width80 u-marginAuto u-marginT20">
-                            <img class="u-width25 u-marginL5p u-align-center" src="images/mindbrush/mb-1.png" alt="">
+                            <img class="u-width25 u-align-center" src="images/mindbrush/mb-1.png" alt="">
                             <img class="u-width25 u-align-center" src="images/mindbrush/mindbrush-04.png" alt="">
                             <img class="u-width30 u-align-center" src="images/mindbrush/logo_onwhite.png" alt="">
                         </div>
@@ -389,7 +419,7 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary u-paddingV150 u-border-grey--T">
+        <div class="Container Container--secondary Container--description u-paddingV150 u-border-grey--T Container--how_works">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width100">
@@ -402,7 +432,7 @@
                             </p>
                         </div>
                         <div class="Container-flex u-paddingV125">
-                            <div class="Container-text u-width35" id="Container-text--2">
+                            <div class="Container-text u-width40" id="Container-text--2">
                                 <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT40 u-lineHeight-1_5">
                                     1. Students go through an initial onboarding.
                                 </h3>
@@ -415,13 +445,13 @@
                                 <!-- <div class="Pane Pane--lg u-bg-darkPink" id="Pane--4"></div> -->
                             </div>
                         </div>
-                        <div class="Container-flex u-paddingV125" id="Container--2">
+                        <div class="Container-flex Container-flex--alt u-paddingV125">
                             <div class="Container-pic Container-pic--lg Container-pic--left">
                                 <img class="Container-picImg" id="Container-pic--2" src="images/mindbrush/mb-3.png"/>
                                 <!-- <div class="Pane Pane--lg Pane--left u-bg-darkBlue" id="Pane--2"></div> -->
                             </div>
-                            <div class="Container-text u-width35" id="Container-text--2">
-                                <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT20 u-lineHeight-1_5">
+                            <div class="Container-text u-width40" id="Container-text--2">
+                                <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT40 u-lineHeight-1_5">
                                     2. Students list their interests and hobbies.
                                 </h3>
                                 <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">
@@ -430,7 +460,7 @@
                             </div>
                         </div>
                         <div class="Container-flex u-paddingV125">
-                            <div class="Container-text u-width45" id="Container-text--2">
+                            <div class="Container-text u-width40" id="Container-text--2">
                                 <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT40 u-lineHeight-1_5">
                                     3. The app schedules self-care activities based on the students' interests.
                                 </h3>
@@ -438,18 +468,18 @@
                                     The app would also automatically schedule friends with overlapping free time to do the same activities together. 
                                 </p>
                             </div>
-                            <div class="Container-flex u-width50">
-                                <img class="u-width50 u-boxShadow3 u-align-center" src="images/mindbrush/invite.png" alt="">
-                                <img class="u-width40 u-boxShadow3 u-align-center" src="images/mindbrush/after-reschedule.png" alt="">
+                            <div class="Container-flex Container-flex--image u-width50">
+                                <img class="u-width50 u-boxShadow3 u-align-center u-borderR5" src="images/mindbrush/invite.png" alt="">
+                                <img class="u-width40 u-boxShadow3 u-align-center u-borderR5" src="images/mindbrush/after-reschedule.png" alt="">
                             </div> 
                         </div>
-                        <div class="Container-flex u-paddingV125" id="Container--2">
-                            <div class="Container-flex u-width50">
-                                <img class="u-width40 u-boxShadow3 u-align-center" src="images/mindbrush/change-x.png" alt="">
-                                <img class="u-width50 u-boxShadow3 u-align-center" src="images/mindbrush/compare-trends.png" alt="">
+                        <div class="Container-flex Container-flex--alt u-paddingV125" id="Container--2">
+                            <div class="Container-flex Container-flex--image u-width50">
+                                <img class="u-width40 u-boxShadow3 u-align-center u-borderR5" src="images/mindbrush/change-x.png" alt="">
+                                <img class="u-width50 u-boxShadow3 u-align-center u-borderR5" src="images/mindbrush/compare-trends.png" alt="">
                             </div>
                             <div class="Container-text u-width40" id="Container-text--2">
-                                <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT20 u-lineHeight-1_5">
+                                <h3 class="u-fontSize-h4 u-fontPlayfair u-marginT40 u-lineHeight-1_5">
                                     4. Based on feedback, the app offers insights into the person's mental hygiene.
                                 </h3>
                                 <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">
@@ -462,7 +492,7 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary u-paddingV150 u-bg-offWhite">
+        <div class="Container Container--description  u-paddingV100 u-bg-tan u-width90 u-marginAuto u-boxShadow1 u-borderR5">
             <div class="Container-wrapper">
                 <div class="Container-flex u-marginT20">
                     <div class="Container-text u-width80">
@@ -470,7 +500,7 @@
                             Outcome
                         </h5>
                         <h3 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_375 u-fontWeight-semibold">
-                            First prize in UVA's Entreprenuership Competition.
+                            First prize in UVA's Social Entreprenuership Competition.
                         </h3>
                         <p class="u-fontSize-p3 u-lineHeight-1_75 u-fontWeight-light u-marginT30">
                             With two of my friends, we pitched Mindbrush to a crowd and panel of 3 judges and came away with 1st prize and $1000 in prize money in the Social Entreprenuership track.
@@ -479,14 +509,42 @@
                             Afterwards, we prototyped a series of initiatives to further test the app, before ultimately disbanding due to more pressing matters in school.
                             <br>
                             <br>
-                            <b>This concept app provided the basis for my mental health research with the <a href="elliewood.html" style="text-decoration: underline;">Elliewood Fellowship</a></b>. After disbanding, I was still very interested in the idea of mental health prevention and how that related to the college mental health system.
+                            <b>This concept app provided the basis for my mental health research with the <a href="elliewood.html" style="text-decoration: underline;">Elliewood Fellowship</a></b>. After disbanding, I was still very interested in the idea of mental health prevention and how it related to the college mental health system.
                             <br>
                             <br>
-                            I spent the next 12 months fully unpacking the college mental health space - learning the ins and outs and doing behaviorial research.
+                            I spent the next 12 months fully unpacking the college mental health space - learning the ins and outs and doing behaviorial research with every single player.
                             <br>
                             <br> 
                             Read more about my research <a href="elliewood.html" style="text-decoration: underline;">here</a>.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Container Container--secondary u-paddingV100">
+            <div class="Container-wrapper">
+                <div class="Container-flex u-marginT20">
+                    <div class="">
+                        <div class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
+                            Previous: <span class="u-text-black">Elliewood Fellowship</span>
+                        </div>
+                        <a href="elliewood.html" class="u-positionS">
+                            <div class="Button Button-sm u-fontPlayfair u-marginT30 u-positionS">
+                                Read case study
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="">
+                        <div class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black u-textRight">
+                            Next: <span class="u-text-black">Goldman Sachs</span>
+                        </div>
+                        <a href="goldman.html" class="u-positionS">
+                            <div class="Button Button-sm u-fontPlayfair u-marginT30 u-positionS u-floatR">
+                                Read case study
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
