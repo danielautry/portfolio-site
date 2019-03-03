@@ -10,6 +10,15 @@ $(function() {
        var $mindbrush = $('#Mindbrush');
        var $goldman = $('#Goldman');
        var $fei = $('#FEI');
+
+       if ($main >= $('.Container--articles').offset().top) {
+         $('#Menu--js-elliewood').css('opacity', '1');
+      }
+
+      if ($main < $('.Container--articles').offset().top) {
+         $('#Menu--js-elliewood').css('opacity', '0');
+      }
+
  
     // console.log($("#Jumpbox").offset().top);
     // $window = $(window);

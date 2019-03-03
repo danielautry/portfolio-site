@@ -1,4 +1,13 @@
+window.onload = function(){
+   // Animate loader off screen
+     $(".preload").fadeOut("slow");
+     $("body").css('overflow', 'visible');
+   };
+
 $(function() {
+   $('#Menu--home').addClass('animated fadeIn');
+   $('.Container--main').addClass('animated fadeIn');
+   $('#Container--main_text').addClass('animated fadeIn slower');
    var wndw = $(window);
    wndw.scroll(function () {
       console.log($(window).scrollTop());
@@ -20,6 +29,16 @@ $(function() {
 
    // console.log($("#Jumpbox").offset().top);
    // $window = $(window);
+      if ($main >= $('#Elliewood--project').offset().top) {
+         $('#Menu--js').css('visibility', 'visible');
+         $('#Menu--js').css('opacity', '1');
+      }
+
+      if ($main < $('#Elliewood--project').offset().top) {
+         $('#Menu--js').css('visibility', 'hidden');
+         $('#Menu--js').css('opacity', '0');
+      }
+
       if ($main > project1) {
          $('#Pane--1').css('opacity', '1');
          // $('#Pane--1').addClass('animated bounceInUp slow');
