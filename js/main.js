@@ -6,20 +6,20 @@ window.onload = function(){
    $(function() {
     $(".menu").click(function() {
       if ($("#navigation").hasClass("hidden")) {
-        $("#navigation").attr("class", "visible animated slideInLeft");
+        $("#navigation").attr("class", "visible animated fadeIn");
       } else {
-        $("#navigation").attr("class", "hidden animated slideOutLeft");
+        $("#navigation").attr("class", "hidden animated fadeOut");
       }
       $(this).toggleClass("open");
     });
   
-    $("#navigation").click(function() {
-      if ($("#navigation").hasClass("visible")) {
-        $(".menu").toggleClass("open");
-      } else {
-      }
-      $(this).attr("class", "slideOutLeft hidden");
-    });
+   //  $("#navigation").click(function() {
+   //    if ($("#navigation").hasClass("visible")) {
+   //      $(".menu").toggleClass("open");
+   //    } else {
+   //    }
+   //    $(this).attr("class", "slideOutLeft hidden");
+   //  });
   
     $(document).keyup(function(e) {
       if (e.keyCode == 27) {
@@ -27,7 +27,7 @@ window.onload = function(){
           $(".menu").toggleClass("open");
         } else {
         }
-        $("#navigation").attr("class", "slideOutLeft hidden");
+        $("#navigation").attr("class", "animated slideOutRight hidden");
       }
     });
   });
