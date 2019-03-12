@@ -3,11 +3,40 @@ window.onload = function(){
      $(".preload").fadeOut("slow");
      $("body").css('overflow', 'visible');
    };
-
+   $(function() {
+    $(".menu").click(function() {
+      if ($("#navigation").hasClass("hidden")) {
+        $("#navigation").attr("class", "visible animated slideInLeft");
+      } else {
+        $("#navigation").attr("class", "hidden animated slideOutLeft");
+      }
+      $(this).toggleClass("open");
+    });
+  
+    $("#navigation").click(function() {
+      if ($("#navigation").hasClass("visible")) {
+        $(".menu").toggleClass("open");
+      } else {
+      }
+      $(this).attr("class", "slideOutLeft hidden");
+    });
+  
+    $(document).keyup(function(e) {
+      if (e.keyCode == 27) {
+        if ($("#navigation").hasClass("visible")) {
+          $(".menu").toggleClass("open");
+        } else {
+        }
+        $("#navigation").attr("class", "slideOutLeft hidden");
+      }
+    });
+  });
+  
+// ADD IN FUNCTION IF ANIMATE.CSS CAN'T LOAD
 $(function() {
    $('#Menu--home').addClass('animated fadeIn');
    $('.Container--main').addClass('animated fadeIn');
-   $('#Container--main_text').addClass('animated fadeIn slower');
+   $('#Container--main_text').addClass('animated fadeIn slow');
    var wndw = $(window);
    wndw.scroll(function () {
       console.log($(window).scrollTop());
@@ -20,12 +49,14 @@ $(function() {
       var $goldman = $('#Goldman');
       var $fei = $('#FEI');
 
-      var project1 = 400;
-      var project2 = 600;
-      var project3 = 1600;
-      var project4 = 2100;
-      var project5 = 2800;
-      var project6 = 3000;
+      var project1 = 600;
+      var project2 = 1200;
+      var project3 = 1800;
+      var project4 = 2500;
+      var project5 = 3100;
+      var about = 3800;
+      var writings = 4400;
+      var contact = 5200;
 
    // console.log($("#Jumpbox").offset().top);
    // $window = $(window);
@@ -40,97 +71,43 @@ $(function() {
       }
 
       if ($main > project1) {
-         $('#Pane--1').css('opacity', '1');
-         // $('#Pane--1').addClass('animated bounceInUp slow');
-         $('#Container-pic--1').css('opacity', '1');
-         // $('#Container-pic--1').addClass('animated bounceInUp slow');
-         // $('#Container-text--1').addClass('animated fadeIn slower');
-         // $('#Container-text--1').css('opacity', '1');
-         $('#Container-text--1').addClass('animated fadeIn');
+         $('#Container--1').addClass('animated fadeIn');
       }
 
       if ($main > project2) { 
-         $projectContainer.addClass('u-bg-white');  
-         $('#Pane--2').css('opacity', '1');
-         // $('#Pane--2').addClass('animated bounceInUp slow'); 
-         $('#Container-pic--2').css('opacity', '1');
-         // $('#Container-pic--2').addClass('animated bounceInUp slow');
-         $('#Container-text--2').addClass('animated fadeIn slow');
-      }
-      
-      // if ($main < project2) {
-      //    $projectContainer.removeClass('u-bg-lightBlue');
-      // }
-
-      if ($main > project3) {
-         // if ($projectContainer.hasClass('u-bg-lightBlue')) {
-         //    $projectContainer.removeClass('bg-lightBlue');
-         // }
-         $projectContainer.addClass('u-bg-white');
-         $('#Pane--3').css('opacity', '1');
-         // $('#Pane--3').addClass('animated bounceInUp slow'); 
-         $('#Container-pic--3').css('opacity', '1');
-         // $('#Container-pic--3').addClass('animated bounceInUp slow');
-         $('#Container-text--3').addClass('animated fadeIn slow');
+         $('#Container--2').addClass('animated fadeIn');
       }
 
-      // if ($main < project3 && $main > project2) {
-      //    $projectContainer.addClass('u-bg-lightBlue');
-      //    $projectContainer.removeClass('u-bg-white');
-      // }
-
-      if ($main > project4) {
-         // if ($projectContainer.hasClass('bg-white')) {
-         //    $projectContainer.removeClass('bg-white');
-         // }
-         // $projectContainer.addClass('bg-navy');
-         $('#Pane--4').css('opacity', '1');
-         // $('#Pane--4').addClass('animated bounceInUp slow'); 
-         $('#Container-pic--4').css('opacity', '1');
-         // $('#Container-pic--4').addClass('animated bounceInUp slow');
-         $('#Container-text--4').addClass('animated fadeIn slow');
+      if ($main > project3) { 
+         $('#Container--3').addClass('animated fadeIn');
       }
 
-      if ($main > project5) {
-         // if ($projectContainer.hasClass('bg-white')) {
-         //    $projectContainer.removeClass('bg-white');
-         // }
-         // $projectContainer.addClass('bg-navy');
-         $('#Pane--5').css('opacity', '1');
-         // $('#Pane--4').addClass('animated bounceInUp slow'); 
-         $('#Container-pic--5').css('opacity', '1');
-         // $('#Container-pic--4').addClass('animated bounceInUp slow');
-         $('#Container-text--5').addClass('animated fadeIn slow');
+      if ($main > project4) { 
+         $('#Container--4').addClass('animated fadeIn');
       }
-      // if ($main < project4 && $main > project3) {
-      //    // $projectContainer.addClass('bg-white');
-      //    $projectContainer.removeClass('bg-white');
-      // }
 
-      // if ($main > project6) {
-      //    $('body').addClass('u-bg-charcoal')
-      // }
+      if ($main > project5) { 
+         $('#Container--5').addClass('animated fadeIn');
+         $('#radical').addClass('animated fadeIn');
+         $('#recharge').addClass('animated fadeIn');
+         $('#cullop').addClass('animated fadeIn');
+         $('#hc').addClass('animated fadeIn');
+         $('#babylon').addClass('animated fadeIn');
+         $('#fei').addClass('animated fadeIn');
+         $('#storyware').addClass('animated fadeIn');
+      }
 
-      // if ($main < project6) {
-      //    $('body').removeClass('u-bg-charcoal')
-      // }
-      
+      if ($main > about) { 
+         $('#Container--6').addClass('animated fadeIn');
+      }
 
-      // if ($main > project6) {
-      //    if ($projectContainer.hasClass('bg-offBlue')) {
-      //       $projectContainer.removeClass('bg-offBlue');
-      //    }
-      //    $('.Container--project').addClass('bg-charcoal');
-      //    $('.Pane--fei').addClass('animated slideInUp');
-      //    $('#FEI-pic').addClass('animated slideInUp');
-      //    $('.ProjectText--fei').addClass('animated pulse');
-      //    $fei.css('opacity', '1');
-      // }
-      // if ($main < project6 && $main > project5) {
-      //    $('.Container--project').addClass('bg-offBlue');
-      //    $('.Container--project').removeClass('bg-charcoal');
-      // }
+      if ($main > writings) { 
+         $('#Container--7').addClass('animated fadeIn');
+      }
 
+      if ($main > contact) { 
+         $('#Container--8').addClass('animated fadeIn');
+      }
   });
 });
 

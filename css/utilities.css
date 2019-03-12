@@ -8,6 +8,7 @@
 
 .u-displayInlineBlock {
     display: inline-block;
+    vertical-align: top;
 }
 
 .u-displayInline {
@@ -109,7 +110,7 @@
 /** Background Colors **/
 
 .u-bg-orange {
-    background-color: #f9a576;
+    background-color: #f8b086;
 }
 
 .u-bg-blue {
@@ -126,6 +127,8 @@
 
 .u-bg-green {
     background-color: #6fcf97;
+    /* background-color: #2a69ed; */
+    /* color: white; */
 }
 
 .u-bg-lightBlue {
@@ -161,7 +164,7 @@
 }
 
 .u-bg-lightWhite {
-    background-color: #f3f3f3;
+    background-color: #f4f4f4;
 }
 
 .u-bg-black {
@@ -197,8 +200,12 @@
 }
 
 .u-bg-tan {
-    background-color: rgba(225, 197, 172, .4);
-    background-color: rgba(175, 175, 175, .15);
+    /* background-color: rgba(225, 197, 172, .3); */
+    background-color: rgba(175, 175, 175, .175);
+}
+
+.u-bg-darkGrey {
+    background-color: #f3f3f3;
 }
 
 .u-bg-red {
@@ -246,6 +253,22 @@
     background-color: #92ff88;
 }
 
+.u-bg-darkerBlue {
+    background: rgb(14, 33, 99);
+}
+
+.u-bg-darkerBlue_1 {
+    background: rgb(23, 38, 92);
+}
+
+.u-bg-darkGreen {
+    background-color: #004325;
+}
+
+.u-bg-darkerGrey {
+    background-color: rgba(0, 0, 0, .2);
+}
+
 
 /** Text Colors **/
 
@@ -278,7 +301,15 @@
 }
 
 .u-text-grey {
+    color: #aaa;
+}
+
+.u-text-lightGrey {
     color: #ccc;
+}
+
+.u-bg-hc_Blue {
+    background-color: #53afca;
 }
 
 /**
@@ -310,7 +341,7 @@
 }
 
 .u-border-grey {
-    border: 1px solid #ccc;
+    border: 1px solid #ccc !important;
 }
 
 .u-border-lightGrey {
@@ -373,9 +404,9 @@
 }
 
 .u-boxShadow3 {
-    -webkit-box-shadow: 0px 4px 60px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 4px 60px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 4px 60px 0px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0px 10px 60px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 60px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 60px 0px rgba(0,0,0,.15);
 }
 
 .u-boxShadow4 {
@@ -413,7 +444,7 @@
 /** Sizes **/
 
 .u-fontSize-main {
-    font-size: 70px;
+    font-size: 85px;
 }
 
 .u-fontSize-h1 {
@@ -564,6 +595,10 @@
     margin-bottom: 0;
 }
 
+.u-marginT5 {
+    margin-top: 5px;
+}
+
 .u-marginT10 {
     margin-top: 10px;
 }
@@ -613,6 +648,10 @@
     margin-bottom: 150px;
 }
 
+.u-marginTN150 {
+    margin-top: -300px;
+}
+
 .u-marginW65 {
     margin-left: 17.5%;
 }
@@ -633,6 +672,9 @@
     margin-left: 5%;
 }
 
+.u-marginL10p {
+    margin-left: 10%;
+}
 
 /**
   ----- PADDING -----
