@@ -6,9 +6,12 @@ window.onload = function(){
    $(function() {
     $(".menu").click(function() {
       if ($("#navigation").hasClass("hidden")) {
-        $("#navigation").attr("class", "visible animated fadeIn");
+        $("#navigation").attr("class", "visible");
+      //   $(".Container--menu").css("position", "static");
+        $("#logo").css("color", "#fff");
       } else {
-        $("#navigation").attr("class", "hidden animated fadeOut");
+        $("#navigation").attr("class", "hidden");
+        $("#logo").css("color", "#222");
       }
       $(this).toggleClass("open");
     });
@@ -88,13 +91,10 @@ $(function() {
 
       if ($main > project5) { 
          $('#Container--5').addClass('animated fadeIn');
-         $('#radical').addClass('animated fadeIn');
-         $('#recharge').addClass('animated fadeIn');
-         $('#cullop').addClass('animated fadeIn');
-         $('#hc').addClass('animated fadeIn');
+         $('#dan').addClass('animated fadeIn');
          $('#babylon').addClass('animated fadeIn');
-         $('#fei').addClass('animated fadeIn');
-         $('#storyware').addClass('animated fadeIn');
+         $('#radical').addClass('animated fadeIn');
+         $('#cullop').addClass('animated fadeIn');
       }
 
       if ($main > about) { 

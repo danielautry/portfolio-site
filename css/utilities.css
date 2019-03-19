@@ -51,6 +51,10 @@
     justify-content: flex-start !important;
 }
 
+.u-justify-end {
+    justify-content: flex-end !important;
+}
+
 .u-justify-spaceBetween {
     justify-content: space-between;
 }
@@ -221,7 +225,7 @@
 }
 
 .u-bg-lightGrey {
-    background-color: #eee;
+    background-color: #f6f6f6;
 }
 
 .u-bg-dukeBlue {
@@ -273,7 +277,7 @@
 /** Text Colors **/
 
 .u-text-black {
-    color: #222;
+    color: #111;
 }
 
 .u-text-white {
@@ -312,6 +316,10 @@
     background-color: #53afca;
 }
 
+.u-bg-darkBlue_2 {
+    background: #363F54;
+}
+
 /**
 ----- BORDERS -----
 **/
@@ -340,8 +348,13 @@
     border: 1px solid #000000;
 }
 
+.u-border-charcoal {
+    border: 1px solid #ddd;
+}
+
 .u-border-grey {
-    border: 1px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+    border-bottom: none !important;
 }
 
 .u-border-lightGrey {
@@ -415,6 +428,12 @@
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.04);
 }
 
+.u-boxShadow5 {
+    -webkit-box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.25);
+}
+
 /**
   ----- FONTS -----
 **/
@@ -455,12 +474,20 @@
     font-size: 52px;
 }
 
+.u-fontSize-h2--alt {
+    font-size: 44px;
+}
+
 .u-fontSize-h3 {
     font-size: 40px;
 }
 
 .u-fontSize-h4 {
     font-size: 34px;
+}
+
+.u-fontSize-h4--alt {
+    font-size: 26px;
 }
 
 .u-fontSize-h4--sec {
@@ -497,6 +524,10 @@
     font-size: 20px;
 }
 
+.u-fontSize-p4 {
+    font-size: 16px;
+}
+
 @media screen and (max-width: 769px) {
     .u-fontSize-p3 {
         font-size: 20px !important;
@@ -504,6 +535,10 @@
 }
 
 /** Weights **/
+
+.u-fontWeight-extraLight {
+    font-weight: 100;
+}
 
 .u-fontWeight-light {
     font-weight: 300;
@@ -573,6 +608,10 @@
 
 .u-letterSpacing_2 {
     letter-spacing: 0.07em;
+}
+
+.u-letterSpacing_3 {
+    letter-spacing: 0.04em;
 }
 
 /**
@@ -649,7 +688,7 @@
 }
 
 .u-marginTN150 {
-    margin-top: -300px;
+    margin-top: -90px;
 }
 
 .u-marginW65 {
@@ -704,6 +743,10 @@
     padding-top: 100px;
 }
 
+.u-paddingB80 {
+    padding-bottom: 80px;
+}
+
 .u-paddingB100 {
     padding-bottom: 100px;
 }
@@ -750,6 +793,10 @@
 
 .u-paddingB150 {
     padding-bottom: 150px;
+}
+
+.u-paddingB175 {
+    padding-bottom: 175px;
 }
 
 
@@ -832,10 +879,15 @@
 
 .u-width95 {
     width: 95%;
+    max-width: 1300px;
 }
 
 .u-width100 {
     width: 100%;
+}
+
+.u-p-MW1 {
+    max-width: 540px;
 }
 
 @media screen and (max-width: 900px) {

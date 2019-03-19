@@ -36,16 +36,16 @@ $(function() {
 
        if ($main > 650) {
         $('#Container-article--3').css('opacity', '1');
-        $('#Container-article--3').addClass('animated fadeIn slideInUp');
+        $('#Container-article--3').addClass('animated fadeIn');
         $('#Container-article--4').css('opacity', '1');
-        $('#Container-article--4').addClass('animated slideInUp');
+        $('#Container-article--4').addClass('animated fadeIn');
        }
 
        if ($main > 1220) { 
         $('#Elliewood-text--overview').addClass('animated fadeIn');
        }
  
-       if ($main > 1950) { 
+       if ($main > 2200) { 
         $('#Elliewood-text--1').addClass('animated fadeIn');
         $('#Elliewood-image--1').addClass('animated fadeIn');
        }
@@ -63,14 +63,14 @@ $(function() {
        }
 
        if ($main > 4250) { 
-        $('.Elliewood-text--2').addClass('animated fadeInUp');
-        $('.Elliewood-text--3').addClass('animated fadeInUp');
-        $('#Elliewood-image--2').addClass('animated fadeInUp');
+        $('.Elliewood-text--2').addClass('animated fadeIn');
+        $('.Elliewood-text--3').addClass('animated fadeIn');
+        $('#Elliewood-image--2').addClass('animated fadeIn');
        }
 
        if ($main > 4800) { 
-        $('.Elliewood-text--4').addClass('animated fadeInUp');
-        $('.Elliewood-text--5').addClass('animated fadeInUp');
+        $('.Elliewood-text--4').addClass('animated fadeIn');
+        $('.Elliewood-text--5').addClass('animated fadeIn');
        }
 
        if ($main > 5050) { 

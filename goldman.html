@@ -18,36 +18,65 @@
 
 <main>
 
-    <nav class="Menu u-text-black">
-        <div class="Container--menu">
-          <div class="Menu-item u-fontSize-h5 u-fontWeight-bold u-fontPlayfair" id="logo"><span class="daniel">daniel</span>autry.</div>
-          <div class="Menu-item u-fontWeight-light" id="resume">Resume</div>
-          <div class="Menu-item u-fontWeight-light" id="about">About</div>
-          <div class="Menu-item u-fontWeight-light" id="portfolio">Portfolio</div>
-          <div class="Menu-item Button Button-md u-fontPlayfair u-fontWeight-bold" id="contact">Contact</div>
-          <div class="Menu-item Menu-item--mobile u-fontPlayfair" id="menu-mobile">
-            <img class="u-width100" src="images/home/menu-mobile.png" alt="">
+    <nav class="Menu" id="Menu--home">
+    <div class="Container--menu">
+      <div class="u-fontSize-h4 u-fontWeight-black u-fontPlayfair" id="logo"><span class="daniel">D.</span></div>
+      <div class="Menu-item" id="menu-ham">
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- change to hidden -->
+        <div id="navigation" class="hidden">
+          <div class="nav u-paddingT150">
+            <ul class="u-text-white u-letterSpacing_3 u-width40">
+              <li><a href="http://google.com" target="_top" class="u-fontWeight-black u-fontSize-h1">Home</a></li>
+              <li class="u-marginT30"><a href="#" class="u-fontWeight-black u-fontSize-h1">About</a></li>
+              <li class="u-marginT30"><a href="#" class="u-fontWeight-black u-fontSize-h1 ">Resume</a></li>
+              <li class="u-marginT30"><a href="#" class="u-fontWeight-black u-fontSize-h1">Portfolio</a></li>
+              <li class="u-marginT30"><a href="#" class="u-fontWeight-black u-fontSize-h1">Contact</a></li>
+            </ul>
+            <div class="nav-social u-marginB0 u-width40 Container-flex u-flex-col u-justify-end">
+              <h2 class="u-fontSize-h4--alt u-fontWeight-extraLight u-letterSpacing_2">
+                dxautry@gmail.com
+              </h2>
+              <div class="Container-text u-width60">
+                <p class="u-fontSize-p3 u-fontWeight-extraLight u-marginT30 u-lineHeight-1_75">
+                    <div class="Container-flex Container--social u-marginT20">
+                        <img src="images/home/Behance_white.png" alt="">
+                        <img src="images/home/LinkedIN_white.png" alt="">
+                        <img src="images/home/Medium_white.png" alt="">
+                        <img src="images/home/Dribbble_white.png" alt="">
+                        <img src="images/home/Github_white.png" alt="">
+                    </div>
+                    <div class="Pane Pane--sm bg-offWhite" data-background-color="#353535"></div>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav> 
 
-      <nav class="Menu Menu--js u-bg-white u-text-black u-boxShadow4" id="Menu--js-goldman">
-            <div class="Container--menu">
-              <div class="Menu-item u-fontSize-h5 u-fontWeight-bold u-fontPlayfair" id="logo"><span class="daniel">daniel</span>autry.</div><div class="Menu-item u-fontWeight-light" id="resume">Resume</div><div class="Menu-item u-fontWeight-light" id="about">About</div><div class="Menu-item u-fontWeight-light" id="portfolio">Portfolio</div><div class="Menu-item u-fontWeight-light" id="contact">Contact</div>
+    <div class="Container Container--project Container--caseStudy Container--top u-bg-offBlue u-paddingV150" id="CaseStudy--goldman">
+        <div class="Container-wrapper Container-wrapper--alt">
+          <div class="Container-flex" id="CaseStudy--1">
+            <div class="Container-text u-width50" id="Container-text--2">
+              <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-light u-bg-blue u-text-white u-borderR5 u-textUpper">Featured Project</h5>
+              <h3 class="u-fontSize-h2 u-fontPlayfair u-fontWeight-black u-marginT20">Goldman Sachs</h3>
+              <p class="u-fontSize-p3 u-marginT50 u-lineHeight-2 u-p-MW1">
+                  A deep-dive into the college mental health care problem space.
+                  <br>
+                  <br>
+                  Charlottesville needed skilled graduates to work on big problems. Yet cultural and financial barriers discouraged students from taking the non-traditional path.
+              </p>
             </div>
-          </nav>
-
-    <div class="Container Container--project Container--caseStudy Container--top u-paddingV100 u-bg-offBlue u-width90 u-marginAuto u-marginT50 u-boxShadow1 u-borderR5" id="CaseStudy">
-        <div class="Container-wrapper">
-          <div class="Container-flex" id="Container--2">
-            <div class="Container-text u-width40" id="Container-text--2">
-              <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-regular">UX Analyst &#183; Software Developer</h5>
-              <h3 class="u-fontSize-h3 u-fontPlayfair u-marginT20">Goldman Sachs</h3>
-              <p class="u-fontSize-p3 u-marginT20 u-lineHeight-1_75">I prototyped, designed, and developed the entire front-end for a bond-trading application during my 2017 internship.</p>
-            </div><div class="Container-pic Container-pic--lg">
-                <img class="Container-picImg" id="Container-pic--2" src="images/goldman/goldman-1.png"/>
-                <div class="Pane Pane--lg u-bg-lightBlue" id="Pane--2"></div>
-              </div>
+            <div class="Container-pic Container-pic--lg u-positionR">
+                <img class="Container-picImg u-boxShadow2 u-borderR5" id="Container-pic--2" src="images/goldman/goldman-1.png"/>
+                <!-- <div class="Pane Pane--lg Pane--caseStudy u-bg-lightBlue" id="Pane--2"></div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +123,7 @@
         </div>
     </div>
         
-    <div class="Container Container--caseStudy Container--description u-paddingV100 u-width90 u-marginAuto u-marginT50 u-boxShadow3 u-borderR5 u-bg-darkPurple u-text-white">
+    <div class="Container Container--caseStudy Container--description u-paddingV150 u-bg-darkPurple u-text-white">
         <div class="Container-wrapper">
             <div class="Container-flex">
                 <div class="Container-text u-width70">
@@ -257,7 +286,7 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary u-paddingV100 u-border-grey--T" id="Container--goldman-search">
+        <div class="Container Container--secondary u-paddingV150 u-border-grey--T" id="Container--goldman-search">
             <div class="Container-wrapper">
                 <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
                     SEARCH
@@ -282,7 +311,7 @@
             </div>
         </div>
 
-        <div class="Container Container--project Container--caseStudy Container--description u-paddingV100 u-width90 u-marginAuto u-marginT50 u-boxShadow3 u-borderR5 u-bg-lightNavy u-text-white" id="Goldman-container--data">
+        <div class="Container Container--project Container--caseStudy Container--description u-paddingV100 u-bg-lightNavy u-text-white" id="Goldman-container--data">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="u-width60">
@@ -303,14 +332,14 @@
             </div>
         </div>
 
-        <div class="Container Container--secondary Container--description u-paddingV100" id="Goldman-container--outcome">
+        <div class="Container Container--secondary Container--description u-paddingV150" id="Goldman-container--outcome">
         <div class="Container-wrapper">
             <div class="Container-flex u-marginT20">
                 <div class="Container-text u-width100" id="Elliewood-text--overview">
                     <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
                         Outcome
                     </h5>
-                    <h3 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_5 u-fontWeight-bold u-width90">
+                    <h3 class="u-fontSize-h3 u-marginT30 u-lineHeight-1_5 u-fontWeight-bold u-width90">
                         Real-time web application to break down complex corporate bond insights into simple and digestable UIs.
                     </h3>
                     <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30 u-width90">
@@ -358,6 +387,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="js/goldman.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 
 </body>
 </html>
