@@ -270,7 +270,7 @@
 }
 
 .u-bg-darkerGrey {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .4);
 }
 
 
@@ -687,8 +687,12 @@
     margin-bottom: 150px;
 }
 
-.u-marginTN150 {
+.u-marginTN_1 {
     margin-top: -90px;
+}
+
+.u-marginTN_2 {
+    margin-top: -60px;
 }
 
 .u-marginW65 {

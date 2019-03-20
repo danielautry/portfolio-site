@@ -1,6 +1,6 @@
 window.onload = function(){
    // Animate loader off screen
-     $(".preload").fadeOut("slow");
+     $(".Preload").fadeOut("slow");
      $("body").css('overflow', 'visible');
    };
    $(function() {
@@ -95,6 +95,8 @@ $(function() {
          $('#babylon').addClass('animated fadeIn');
          $('#radical').addClass('animated fadeIn');
          $('#cullop').addClass('animated fadeIn');
+         $('#recharge').addClass('animated fadeIn');
+
       }
 
       if ($main > about) { 
