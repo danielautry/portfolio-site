@@ -10,63 +10,301 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
   <title> </title>
-  <link rel='stylesheet' href='css/utilities.css' type='text/css' />
-  <link rel='stylesheet' href='css/styles.css' type='text/css' />
+  <link rel='stylesheet' href='css/utilities.min.css' type='text/css' />
+  <link rel='stylesheet' href='css/styles.min.css' type='text/css' />
   <link rel='stylesheet' href='css/normalize.css' type='text/css' />
   <link rel='stylesheet' href='css/animate.css' type='text/css' />
 </head>
 <body>
 
-<main>
+<main class="About">
 
-    <nav class="Menu u-text-white" id="Menu--home">
-        <div class="Container--menu">
-          <div class="u-fontSize-h4 u-fontWeight-black u-fontPlayfair" id="logo"><span class="daniel">D.</span></div>
+    <div class="Preload u-positionR">
+        <div class="u-fontSize-h4 u-text-white u-fontWeight-bold u-fontPlayfair u-positionA" id="Preload-logo">
+          <span class="D">
+            daniel
+          </span><span class="A u-text-darkerBlack">
+            autry
+          </span>
+        </div>
+      </div>  
+    
+  <nav class="Menu Menu--main">
+    <div class="Container--Menu">
+      <div class="Container-flex u-alignItems-center u-height100">
+        <div class="u-fontSize-h4 u-fontWeight-black u-fontPlayfair" id="logo"><span class="daniel"><a href="/" class="link-white">D.</a></span></div>
+        <div class="">
           <div class="Menu-item">
-              <div class="u-fontSize-h5 u-fontWeight-light u-" id="menu-resume"><a href="AutryDanielResume.pdf" target="_blank" class="u-text-white">Resume</a></div>
+              <div class="u-fontSize-p4" id="Menu-portfolio"><a href="/#portfolio" class="link-white">Portfolio</a></div>
           </div>
           <div class="Menu-item">
-              <div class="u-fontSize-h5 u-fontWeight-light u-fontLato" id="menu-contact"><a href="AutryDanielResume.pdf" target="_blank" class="u-text-white">Contact Me</a></div>
-            </div>
+        	    <div class="u-fontSize-p4 u-fontWeight-bold" id="Menu-about"><a href="about.html" class="link-white">About</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-resume"><a href="AutryDanielResume.pdf" target="_blank" class="link-white">Resume</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-contact"><a href="/#contact" class="link-white">Contact</a></div>
+        	  </div>
         </div>
-      </nav> 
-
-<div class="Container u-paddingV150 u-text-black">
-    <div class="Container-wrapper u-paddingV100">
-      <div class="Container-overlay u-bg-darkerGrey">
-        <div class="Container-inner u-width55">
-            <div class="fullscreen-bg">
-                <video loop muted autoplay poster="images/grey.jpg" class="fullscreen-bg__video">
-                   <source src="videos/movie.mp4" type="video/mp4">
-                
-              </video>
+      </div>
+    </div>
+  </nav>
+  
+  <nav class="Menu Menu--js u-bg-white u-text-black">
+    <div class="Container--Menu">
+      <div class="Container-flex u-alignItems-center u-height100">
+        <div class="u-fontSize-h4 u-fontWeight-black u-fontPlayfair" id="logo"><span class="daniel"><a href="/">D.</a></span></div>
+        <div class="">
+          <div class="Menu-item">
+              <div class="u-fontSize-p4" id="Menu-portfolio"><a href="/#portfolio">Portfolio</a></div>
           </div>
-          
+          <div class="Menu-item">
+        	    <div class="u-fontSize-p4 u-fontWeight-bold" id="Menu-about"><a href="about.html">About</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-resume"><a href="AutryDanielResume.pdf" target="_blank">Resume</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-contact"><a href="/#contact">Contact</a></div>
+        	  </div>
         </div>
       </div>
-  </div>
-</div>
+    </div>
+  </nav>
 
-<div class="Container Container--about u-bg-white u-paddingV100 u-border-grey--T">
-    <div class="Container-wrapper u-paddingV50" id="Container-6">
-      <h2 class="u-fontSize-h2 u-fontWeight-black u-fontPlayfair u-lineHeight-1_5 u-letterSpacing_1">
-        Originally from Dallas, Texas. <br> Currently in Charlottesville, Virginia.
-      </h2>
-      <div class="Container-text u-width90">
-        <p class="u-fontSize-p1 u-fontWeight-light u-lineHeight-1_75 u-marginT30">
-            <span class="Container--about-1">Formerly a design instructor for HackCville, a front-end developer for Goldman Sachs, and a spoken word poet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </span>
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  <b>Read More...</b>
-        </p>
-      </div>
-      <a href="https://medium.com/@dxautry/how-my-depression-became-my-career-ddf80c2cc5fd" target="_blank" class="u-text-black u-displayBlock">
-        <div class="Button Button-md u-fontLato u-fontWeight-medium hvr-sweep-to-top u-marginT50">
-          About me
+  <div class="Container Container--AboutMe u-positionR u-paddingV150 u-text-black">
+    <div class="Container-overlay u-bg-darkerGrey">
+      <div class="Container-wrapper">
+          <div class="fullscreen-bg">
+            <video loop muted autoplay poster="images/grey.jpg" class="fullscreen-bg__video">
+              <source src="videos/movie.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-      </a>
+      </div>
     </div>
   </div>
+
+<div class="Container Container--about u-bg-white u-paddingV50 u-border-grey--T" id="about">
+    <div class="Container-wrapper u-paddingV50" id="Container-6">
+      <h2 class="u-fontSize-h1 u-fontWeight-black u-fontPlayfair u-lineHeight-1_375 u-letterSpacing_1">
+          
+          Designer from Dallas, Texas. <br> 
+            Currently in Charlottesville, Virginia.
+      </h2>
+      <div class="Container-flex u-marginT50" id="about-flex_1">
+        <div class="u-width40 u-marginAuto">
+          <img src="images/about/daniel-4.jpg" class="u-width100 u-boxShadow3 u-borderR5 u-marginT10" alt="">
+        </div>
+        <div class="u-width65">
+          <div class="Container-text u-floatR">
+            <p class="u-fontSize-p3 u-lineHeight-1_75 u-p-MW1">
+                <span class="Container--about-1">
+                Heyo, I'm Daniel - I'm a recent grad from the University of Virginia, with a B.A. in Computer Science and a focus in Psychology.
+                <p class="u-fontSize-p3  u-lineHeight-1_75 u-p-MW1 u-marginT20">
+                I was born and raised in Dallas, Texas. Growing up, I had a unique perspective on the world - being American, and being black. I learned everyone has a story to tell, and it's important to be open to change and fresh ideas.
+                </p>
+            </p>
+            <p class="u-fontSize-p3  u-lineHeight-1_75 u-width100 u-marginT15 u-p-MW1">
+                I found a love for psychology and design my sophomore year of college. After personal struggles with anxiety and depression, I became fascinated with the way people think, feel, and behave - and how products could help them live more fulfilling lives.  
+                <p class="u-fontSize-p3  u-lineHeight-1_75 u-p-MW1 u-marginT20">
+                Just recently, I finished up an 8-month personal research project for how college students can better care for their mental health, as well as the role counseling clinics play in this. 
+                </p>
+                <p class="u-fontSize-p3  u-lineHeight-1_75 u-p-MW1 u-marginT20">
+                Outside of design, I'm a major basketball (and Lebron) fan, and enjoy exploring the green outdoors. My fun fact is placing 3rd in a national slam poetry competition. 
+                </p>  
+                <p class="u-fontSize-p3  u-lineHeight-1_75 u-p-MW1 u-marginT20">
+                I'm always down to collaborate when I have the time. I'm currently hoping to further my career in the design space - reach out and let's chat!
+                </p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="Container-flex">
+        <div class="u-width75">
+          <div class="Container-text u-width100">
+            
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="Container Container--about u-bg-white u-border-grey--T" id="education">
+      <div class="Container-wrapper u-paddingB50">
+        <h2 class="u-fontSize-h3 u-fontWeight-black u-fontPlayfair u-lineHeight-1_5 u-letterSpacing_1">
+          Education
+        </h2>
+        <div class="Container-text u-width90">
+          <p class="u-fontSize-p1  u-lineHeight-1_75 u-marginT30">
+            University of Virginia
+            <p class="u-fontSize-p4  u-lineHeight-1_75 u-marginT10 u-text-darkGrey">
+              Bachelor of Arts in Computer Science, Focus in Psychology (27 Credit Hours) &#8226; <i>May 2018</i>
+             </p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <div class="Container Container--about u-bg-white u-paddingB100 u-border-grey--T" id="about-experience">
+      <div class="Container-wrapper u-paddingV50">
+        <div class="Container-flex" id="about-experience-flex">
+          <div class="u-width45" id="experience">
+            <h2 class="u-fontSize-h3 u-fontWeight-black u-fontPlayfair u-lineHeight-1_5 u-letterSpacing_1">
+              Experience
+            </h2>
+            <div class="Container-text flex-mobile">
+              <div class="flex-mobile-child">
+                <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                   UniWellness TeleMental Health
+                   <p class="u-fontSize-p4  u-lineHeight-1_75 u-marginT10 u-text-darkGrey">
+                      Product Design Associate &#8226; <i>Feb 2019 - Present</i>
+                   </p>
+                </p>
+                <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                   Elliewood Fellowship
+                   <p class="u-fontSize-p4  u-lineHeight-1_75 u-marginT10 u-text-darkGrey">
+                      Mental Health User Researcher &#8226; <i>Feb 2018 - Jan 2019</i>
+                   </p>
+                </p>
+                <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                    HackCville Launch Acadamy
+                    <p class="u-fontSize-p4  u-lineHeight-1_75 u-marginT10 u-text-darkGrey">
+                       UX/UI/Web Development Instructor &#8226; <i>May 2018 - Aug 2018</i>
+                    </p>
+                 </p>
+              </div>
+               <div class="flex-mobile-child">
+                 <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                    Storyware Digital Agency
+                    <p class="u-fontSize-p4  u-lineHeight-1_75 u-marginT10 u-text-darkGrey">
+                       UX Analyst, Software Engineer &#8226; <i>Jan 2018 - Present</i>
+                    </p>
+                 </p>
+                 <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                    Goldman Sachs
+                    <p class="u-fontSize-p4  u-lineHeight-1_75 u-marginT10 u-text-darkGrey">
+                       Technical Analyst, Project Lead &#8226; <i>May 2017 - Aug 2017</i>
+                    </p>
+                 </p>
+                 <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                    Radical Design Agency
+                    <p class="u-fontSize-p4  u-lineHeight-1_75 u-marginT10 u-text-darkGrey">
+                       Project Lead, Web Developer &#8226; <i>Jan 2017 - Nov 2017</i>
+                    </p>
+                 </p>
+               </div>
+            </div>
+            <a href="AutryDanielResume.pdf" target="_blank" class="u-text-black u-displayBlock">
+              <div class="Button Button-md  u-fontWeight-medium hvr-sweep-to-top u-marginT50">
+                Resume
+              </div>
+            </a>
+          </div>
+          <div class="u-width45" id="skills">
+            <h2 class="u-fontSize-h3 u-fontWeight-black u-fontPlayfair u-lineHeight-1_5 u-letterSpacing_1">
+              Skills
+            </h2>
+            <div class="Container-text">
+              <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                General
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-textUpper u-marginT15">UX/UI</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Product Design</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">User Research</h5>
+                </div>
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Rapid Prototyping</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Storyboarding</h5>
+                </div>
+                <div class="Container-flex u-justify-start">
+                    <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Wireframing</h5>
+                    <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Design Sprints</h5>
+                  </div>
+                  <div class="Container-flex u-justify-start">
+                    <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Usability Testing</h5>
+                    <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Branding</h5>
+                  </div>
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Frontend Dev</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Software Engineering</h5>
+                </div>
+              </p>
+              <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                Design
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Adode Creative Suite</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Figma</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Sketch</h5>
+                </div>
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">InVision</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Storyboarding</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Keynote</h5>
+                </div>
+              </p>
+              <p class="u-fontSize-p2  u-lineHeight-1_75 u-marginT30">
+                Engineering
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-textUpper u-marginT15">HTML/CSS</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">AngularJS/jQuery</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">PHP</h5>
+                </div>
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Custom CMS</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">SQL</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Python</h5>
+                </div>
+                <div class="Container-flex u-justify-start">
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Java</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">C/C++</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Git</h5>
+                  <h5 class="u-fontSize-h6 u-letterSpacing_1  u-bg-charcoal u-text-white u-borderR5 u-marginT15">Command Line</h5>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer>
+        <div class="Container u-bg-white Container--contact u-border-grey--T u-paddingV100">
+            <div class="Container-wrapper">
+              <div class="u-width70">
+              <h2 class="u-fontPlayfair u-fontSize-h2 u-fontWeight-black">
+                <a href="mailto:dxautry@gmail.com" target="_blank">dxautry@gmail.com</a>
+              </h2>
+              <div class="Container-text u-width90">
+                <p class="u-fontSize-p3 u-marginT10 u-lineHeight-1_75">
+                    <span class="Container--about-1">Always down to collaborate when I have the time. I'm hoping to further my career by disrupting the social product space. 
+                    Let's get in touch ✌️.
+                    <br>
+                    </span>
+                    <div class="Container-flex Container--social u-marginT50">
+                        <a href="https://www.behance.net/dxautry" target="_blank">
+                          <img src="images/home/behance.png" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniel-autry/" target="_blank">
+                          <img src="images/home/linkedin.png" alt="">
+                        </a>
+                        <a href="https://medium.com/@dxautry" target="_blank">
+                          <img src="images/home/medium.png" alt="">
+                        </a>
+                        <a href="https://dribbble.com/danielautry" target="_blank">
+                          <img src="images/home/dribble.png" alt="">
+                        </a>
+                        <a href="https://github.com/danielautry" target="_blank">
+                          <img src="images/home/github.png" alt="">
+                        </a>
+                    </div>
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+      </footer>
 
 
 
@@ -75,8 +313,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="js/scrollie.min.js"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/preload.min.js" type="text/javascript"></script>
 
 </body>
 </html>

@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,700" rel="stylesheet">
 
     <title> </title>
-    <link rel='stylesheet' href='css/utilities.css' type='text/css' />
-    <link rel='stylesheet' href='css/styles.css' type='text/css' />
+    <link rel='stylesheet' href='css/utilities.min.css' type='text/css' />
+    <link rel='stylesheet' href='css/styles.min.css' type='text/css' />
     <link rel='stylesheet' href='css/normalize.css' type='text/css' />
     <link rel='stylesheet' href='css/animate.css' type='text/css' />
 </head>
@@ -18,55 +18,101 @@
 
 <main>
 
- <div class="preload u-positionR">
-    <div class="u-fontSize-h4 u-text-white u-fontWeight-bold u-fontPlayfair u-positionA" id="preload-logo">
-      <span class="d">d</span><span class="a"id="a">a</span><span class="n">n</span><span class="i">i</span><span class="e">e</span><span class="l">l</span><span class="a" id="A">a</span><span class="u">u</span><span class="t">t</span><span class="r">r</span><span class="y">y</span>
+  <div class="Preload u-positionR">
+    <div class="u-fontSize-h4 u-text-white u-fontWeight-bold u-fontPlayfair u-positionA" id="Preload-logo">
+      <span class="D">
+        daniel
+      </span><span class="A u-text-darkerBlack">
+        autry
+      </span>
     </div>
   </div>
 
-  <nav class="Menu" id="Menu--home">
-        <div class="Container--menu">
-          <div class="u-fontSize-h4 u-fontWeight-black u-fontPlayfair" id="logo"><span class="daniel"><a href="/">D.</a></span></div>
+  <nav class="Menu Menu--main">
+    <div class="Container--Menu">
+      <div class="Container-flex u-alignItems-center u-height100">
+        <div class="u-fontSize-h4 u-fontWeight-black u-fontPlayfair" id="logo"><span class="daniel"><a href="/">D.</a></span></div>
+        <div class="">
           <div class="Menu-item">
-              <div class="u-fontSize-h5 u-fontWeight-light u-fontPlayfair" id="menu-resume"><a href="AutryDanielResume.pdf" target="_blank">Resume</a></div>
+              <div class="u-fontSize-p4" id="Menu-portfolio"><a href="/#portfolio">Portfolio</a></div>
           </div>
           <div class="Menu-item">
-              <div class="u-fontSize-h5 u-fontWeight-light u-fontPlayfair" id="menu-contact"><a href="AutryDanielResume.pdf" target="_blank">Contact Me</a></div>
-            </div>
+        	    <div class="u-fontSize-p4" id="Menu-about"><a href="about.html">About</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-resume"><a href="AutryDanielResume.pdf" target="_blank">Resume</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-contact"><a href="/#contact">Contact</a></div>
+        	  </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
+  
+  <nav class="Menu Menu--js u-bg-white u-text-black">
+    <div class="Container--Menu">
+      <div class="Container-flex u-alignItems-center u-height100">
+        <div class="u-fontSize-h4 u-fontWeight-black u-fontPlayfair" id="logo"><span class="daniel"><a href="/">D.</a></span></div>
+        <div class="">
+          <div class="Menu-item">
+              <div class="u-fontSize-p4" id="Menu-portfolio"><a href="/#portfolio">Portfolio</a></div>
+          </div>
+          <div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-about"><a href="about.html">About</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-resume"><a href="AutryDanielResume.pdf" target="_blank">Resume</a></div>
+        	</div>
+        	<div class="Menu-item">
+        	    <div class="u-fontSize-p4" id="Menu-contact"><a href="/#contact">Contact</a></div>
+        	  </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-    <div class="Container Container--project Container--caseStudy Container--top u-bg-offBlue u-paddingV150" id="CaseStudy--goldman">
+    <div class="Container Container--project Container--caseStudy Container--top u-bg-offBlue u-paddingV100" id="CaseStudy--goldman">
         <div class="Container-wrapper Container-wrapper--alt">
           <div class="Container-flex" id="CaseStudy--1">
             <div class="Container-text u-width50" id="Container-text--2">
               <h5 class="u-fontSize-h6 u-letterSpacing_1 u-fontWeight-light u-bg-blue u-text-white u-borderR5 u-textUpper">Featured Project</h5>
               <h3 class="u-fontSize-h2 u-fontPlayfair u-fontWeight-black u-marginT20">Goldman Sachs</h3>
               <p class="u-fontSize-p3 u-marginT50 u-lineHeight-2 u-p-MW1">
-                  A deep-dive into the college mental health care problem space.
+                  Google-esque search functionality to save precious seconds in high intensity bond trading.
                   <br>
                   <br>
-                  Charlottesville needed skilled graduates to work on big problems. Yet cultural and financial barriers discouraged students from taking the non-traditional path.
+                   As a technical analyst intern, I was the sole UX & frontend engineer to create a corporate bond trading dashboard.
               </p>
             </div>
             <div class="Container-pic Container-pic--lg u-positionR">
                 <img class="Container-picImg u-boxShadow2 u-borderR5" id="Container-pic--2" src="images/goldman/goldman-1.png"/>
-                <!-- <div class="Pane Pane--lg Pane--caseStudy u-bg-lightBlue" id="Pane--2"></div> -->
             </div>
           </div>
         </div>
       </div>
-      <div class="Container Container--project Container--caseStudy Container--info u-paddingV50 u-marginT100 u-width70 u-marginAuto u-borderR5 u-border-lightGrey" id="CaseStudy">
-        <div class="Container-wrapper">
+     <div class="Container Container--stat Container--caseStudy Container--info u-marginT100" id="CaseStudy">
+        <div class="Container-wrapper u-borderR5 u-paddingV50 u-border-charcoal">
           <div class="Container-flex" id="">
             <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
-                <b>Role: </b>  &nbsp;Design, Behaviorial Research, Design Sprints, Rapid Prototyping
+                <div class="Container-flex u-flex-col">
+                    <div class="u-fontSize-p4 u-fontWeight-bold u-textUpper">Role</div>
+                    <div class="u-fontSize-p4 u-fontWeight-light u-marginT10">Technical Analyst Intern</div>
+                </div>
             </div>
             <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
-                <b>Team: </b>  &nbsp;Daniel Autry (Solo)
+                <div class="Container-flex u-flex-col">
+                    <div class="u-fontSize-p4 u-fontWeight-bold u-textUpper">Team</div>
+                    <div class="u-fontSize-p4 u-fontWeight-light u-marginT10">Daniel Autry (Frontend)</div>
+                    <div class="u-fontSize-p4 u-fontWeight-light u-marginT10">David Ndereba (Backend)</div>
+                </div>
             </div>
             <div class="Container-text u-width30 u-fontSize-h6 u-lineHeight-1_5 u-textCenter">
-                <b>Duration: </b>  &nbsp;Feb 2018 (12 months)
+                <div class="Container-flex u-flex-col">
+                    <div class="u-fontSize-p4 u-fontWeight-bold u-textUpper">Duration</div>
+                    <div class="u-fontSize-p4 u-fontWeight-light u-marginT10">May 2017</div>
+                    <div class="u-fontSize-p4 u-fontWeight-light u-marginT10">(summer internship)</div>
+                </div>
             </div>
           </div>
         </div>
@@ -79,7 +125,7 @@
             </p>
             <div class="Container-flex u-marginT75">
                 <div class="Container-text u-width60">
-                    <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
+                    <h5 class="Heading u-fontSize-h6 u-fontWeight-regular u-lineHeight-1_5 u-letterSpacing_3 u-displayInlineBlock u-textUpper">
                         Problem
                     </h5>
                     <h3 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_5 u-fontWeight-semibold">
@@ -103,11 +149,11 @@
         <div class="Container-wrapper">
             <div class="Container-flex">
                 <div class="Container-text u-width70">
-                    <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
+                    <h5 class="Heading-white u-fontSize-h6 u-fontWeight-regular u-lineHeight-1_5 u-letterSpacing_3 u-displayInlineBlock u-textUpper">
                         Solution
                     </h5>
                     <h3 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_375 u-fontWeight-semibold">
-                        Present volatile bonds in a real-time web application, so that traders can find key nformation right away.
+                        Present volatile bonds in a real-time web application, so that traders can find key information right away.
                     </h3>
                     <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30">
                         My task was to design a high-definition data visualizations to break down complex insights into simple and digestable UIs.
@@ -124,19 +170,18 @@
         </div>
         </div>
 
-          <div class="Container Container--secondary Container--description u-paddingV100 u-border-grey--T">
+          <div class="Container Container--secondary Container--description u-paddingV100 u-border-grey--T" id="Container--phases">
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="Container-text u-width90">
-                        <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-bold u-letterSpacing_2">
+                        <h5 class="Heading u-fontSize-h6 u-fontWeight-regular u-lineHeight-1_5 u-letterSpacing_3 u-displayInlineBlock u-textUpper">
                             Process
-                            <!-- look up journey maps -->
                         </h5>
                         <h3 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_375 u-fontWeight-semibold">
                             How do we allow traders to find bonds quickly?
                         </h3>
+                        <p class="u-lineHeight-1_75 u-marginT30 u-fontSize-p3">This required three phases:</p>
                         <ul class="u-lineHeight-1_75 u-marginT30 u-fontSize-p3">
-                            This required three phases:
                             <li class="u-marginT10 u-fontSize-p3 u-lineHeight-1_75">
                                 Performing behaviorial interviews with each of the traders to understand behavior and pain points, as well as mapping out journey map.
                             </li>
@@ -153,82 +198,9 @@
             </div>
           </div>
 
-          <!-- <div class="Container Container--secondary u-paddingB150">
-            <div class="Container-wrapper">
-                <div class="Container-map">
-                    <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
-                        Parts to a bond
-                    </h5>
-                   <div class=" Container-flex u-justify-center">
-                        <div class="Container-infoBlock u-positionR u-width20">
-                            <div class="Container-line--arrow Container-line--left u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--bottom u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--right u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--middle u-positionA u-bg-charcoal">
-                            </div>
-                            <p class="Container-infoDesc u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-marginAuto u-lineHeight-1_5 u-positionA">Bond Abbrevation</p>
-                            <p class="u-fontSize-h2 u-fontWeight-bold u-displayBlock u-textCenter u-marginAuto u-marginT50 u-lineHeight-1_5">GS </p>
-                        </div>
-                        <div class="Container-infoBlock u-positionR u-width20">
-                            <div class="Container-line--arrow Container-line--left u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--bottom u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--right u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--middle u-positionA u-bg-charcoal"></div>
-                            <p class="Container-infoDesc u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-marginAuto u-lineHeight-1_5 u-positionA">Amount</p>
-                            <p class="u-fontSize-h2 u-fontWeight-bold u-displayBlock u-textCenter u-marginAuto u-marginT50 u-lineHeight-1_5">125 </p>
-                        </div>
-                        <div class="Container-infoBlock u-positionR u-width20">
-                            <div class="Container-line--arrow Container-line--left u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--bottom u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--right u-positionA u-bg-charcoal"></div>
-                            <div class="Container-line--arrow Container-line--middle u-positionA u-bg-charcoal"></div>
-                            <p class="Container-infoDesc u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-marginAuto u-lineHeight-1_5 u-positionA">Maturity</p>
-                            <p class="u-fontSize-h2 u-fontWeight-bold u-displayBlock u-marginAuto u-marginT50 u-lineHeight-1_5 u-textCenter">4.2 </p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="Container Container--secondary u-paddingV150 u-border-grey--T">
-            <div class="Container-wrapper">
-                <div class="Container-flex">
-                    <div class="Container-text u-width70">
-                        <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
-                            TRADE
-                        </h5>
-                        <h3 class="u-fontSize-h3 u-marginT30 u-lineHeight-1_5 u-fontPlayfair">
-                            How does a bond trade work?
-                        </h3>
-                    </div>
-                </div>
-                <div class="Container-flex u-positionR u-marginT75" id="Goldman-container--3">
-                    <div class="Container-line u-positionA u-width100 u-bg-grey" id="Container-line--2"></div>
-                    <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width25 u-boxShadow2">
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-width80 u-marginAuto u-lineHeight-1_5 u-positionA">Understand problematic thoughts, feelings, and behaviors. </p>
-                    </div>
-                    <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width25 u-boxShadow2">
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-marginAuto u-width80  u-lineHeight-1_5 u-positionA">Be motivated to change it.</p>
-                    </div>
-                    <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width25 u-boxShadow2">
-                        <p class="u-fontSize-p3 u-fontWeight-regular u-displayBlock u-textCenter u-marginAuto u-width80 u-lineHeight-1_5 u-positionA">Look for potential solutions. </p>
-                    </div>
-                </div>
-        
-                <div class="Container-text u-width70">
-                    <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-paddingT80">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
-            </div>
-        </div> -->
         <div class="Container Container--secondary_infoBlocks u-border-grey--T u-paddingV100" id="Container--goldman-research">
             <div class="Container-wrapper">
-                <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
+                <h5 class="Heading u-fontSize-h6 u-fontWeight-regular u-lineHeight-1_5 u-letterSpacing_3 u-displayInlineBlock u-textUpper">
                     User Research
                 </h5>
                 <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30 u-width90">
@@ -238,8 +210,6 @@
                 <div class="Container-flex u-positionR u-marginT75" id="Goldman-container--4">
                     <div class="Container-line u-positionA u-width100 u-bg-lightGrey" id="Container-line--2"></div>
                     <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width18 u-boxShadow2">
-                        <!-- put icon here -->
-                        <!-- look at email sent to directors and get findings -->
                         <p class="u-fontSize-p3 u-fontWeight-light u-displayBlock u-textCenter u-width80 u-marginAuto u-lineHeight-1_5 u-positionA">Clients often demand corporate bond information immediately. </p>
                     </div>
                     <div class="Container-infoBlock u-border-lightGrey u-bg-white u-positionR u-width18 u-boxShadow2">
@@ -264,7 +234,7 @@
 
         <div class="Container Container--secondary u-paddingV150 u-border-grey--T" id="Container--goldman-search">
             <div class="Container-wrapper">
-                <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_1 u-fontWeight-semibold">
+                <h5 class="Heading u-fontSize-h6 u-fontWeight-regular u-lineHeight-1_5 u-letterSpacing_3 u-displayInlineBlock u-textUpper">
                     SEARCH
                 </h5>
                 <p class="u-fontSize-p3 u-lineHeight-1_75 u-fontWeight-light u-marginT30 u-width90">
@@ -291,7 +261,7 @@
             <div class="Container-wrapper">
                 <div class="Container-flex">
                     <div class="u-width60">
-                        <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
+                        <h5 class="Heading-white u-fontSize-h6 u-fontWeight-regular u-lineHeight-1_5 u-letterSpacing_3 u-displayInlineBlock u-textUpper">
                             Data Points
                         </h5>
                         <h3 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_375 u-fontWeight-semibold">
@@ -312,11 +282,11 @@
         <div class="Container-wrapper">
             <div class="Container-flex u-marginT20">
                 <div class="Container-text u-width100" id="Elliewood-text--overview">
-                    <h5 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
+                    <h5 class="Heading u-fontSize-h6 u-fontWeight-regular u-lineHeight-1_5 u-letterSpacing_3 u-displayInlineBlock u-textUpper">
                         Outcome
                     </h5>
-                    <h3 class="u-fontSize-h3 u-marginT30 u-lineHeight-1_5 u-fontWeight-bold u-width90">
-                        Real-time web application to break down complex corporate bond insights into simple and digestable UIs.
+                    <h3 class="u-fontSize-h3 u-marginT30 u-lineHeight-1_5 u-fontWeight-bold u-fontPlayfair u-width90">
+                        Real-time web application to break down complex bond insights into simple and digestable UIs.
                     </h3>
                     <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30 u-width90">
                         Due to non-discolusure agreements with Goldman Sachs, I am limited in showing the rest of the web application and mockups, as they contain sensitive information and architecture.
@@ -334,22 +304,22 @@
             <div class="Container-flex u-marginT20">
                 <div class="">
                     <div class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
-                        Previous: <span class="u-text-black">Mindbrush</span>
+                        Previous: <span class="u-text-darkerBlue">Mindbrush</span>
                     </div>
-                    <a href="mindbrush.html" class="u-positionS">
-                        <div class="Button Button-sm u-fontPlayfair u-marginT30 u-positionS">
-                            Read case study
+                    <a class="u-positionS" href="mindbrush.html">
+                        <div class="Button Button-sm  u-fontWeight-bold hvr-sweep-to-top u-text-black u-marginT20 u-positionS">
+                            View Case Study
                         </div>
                     </a>
                 </div>
 
                 <div class="">
                     <div class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black u-textRight">
-                        Next: <span class="u-text-black">Propel Microlearning</span>
+                        Next: <span class="u-text-orange">Propel Microlearning</span>
                     </div>
                     <a href="https://www.behance.net/gallery/65031843/PROPEL-MICROLEARNING" target="_blank" class="u-positionS">
-                        <div class="Button Button-sm u-fontPlayfair u-marginT30 u-positionS u-floatR">
-                            Read case study
+                        <div class="Button Button-sm  u-fontWeight-bold hvr-sweep-to-top u-text-black u-marginT20 u-positionS u-floatR">
+                            View Case Study
                         </div>
                     </a>
                 </div>
@@ -360,36 +330,9 @@
     
   </main>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="js/goldman.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+    <script src="js/preload.min.js" type="text/javascript"></script>
 
 </body>
 </html>
-
-
-
-<!-- <div class="Container Container--secondary u-paddingV150 u-bg-skyBlue">
-        <div class="Container-wrapper">
-            <div class="Container-flex">
-                <div class="Container-text u-width50">
-                    <h2 class="u-fontSize-h5 u-textUpper u-letterSpacing_2 u-fontWeight-black">
-                        Personas
-                    </h2>
-                    <h2 class="u-fontSize-h3 u-marginT30 u-fontPlayfair u-lineHeight-1_5 u-fontWeight-semibold">
-                        Who are my users?
-                    </h2>
-                    <p class="u-fontSize-p2 u-lineHeight-1_75 u-fontWeight-light u-marginT30">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   </span>
-                        <br>
-                        <br>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   </span>
-                    </p>
-                </div>
-            <div class="u-width50">
-                <img class="u-width65 u-marginW65 u-marginT30" src="images/prof.svg" alt="">
-            </div>
-            </div>
-        </div>
-    </div> -->

@@ -3,55 +3,22 @@ window.onload = function(){
      $(".Preload").fadeOut("slow");
      $("body").css('overflow', 'visible');
    };
-   $(function() {
-    $(".menu").click(function() {
-      if ($("#navigation").hasClass("hidden")) {
-        $("#navigation").attr("class", "visible");
-      //   $(".Container--menu").css("position", "static");
-        $("#logo").css("color", "#fff");
-      } else {
-        $("#navigation").attr("class", "hidden");
-        $("#logo").css("color", "#222");
-      }
-      $(this).toggleClass("open");
-    });
-  
-   //  $("#navigation").click(function() {
-   //    if ($("#navigation").hasClass("visible")) {
-   //      $(".menu").toggleClass("open");
-   //    } else {
-   //    }
-   //    $(this).attr("class", "slideOutLeft hidden");
-   //  });
-  
-    $(document).keyup(function(e) {
-      if (e.keyCode == 27) {
-        if ($("#navigation").hasClass("visible")) {
-          $(".menu").toggleClass("open");
-        } else {
-        }
-        $("#navigation").attr("class", "animated slideOutRight hidden");
-      }
-    });
-  });
+
+function scrollToPortfolio() {
+   $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 1000);
+   return false;
+}
   
 // ADD IN FUNCTION IF ANIMATE.CSS CAN'T LOAD
 $(function() {
    $('#Menu--home').addClass('animated fadeIn');
    $('.Container--main').addClass('animated fadeIn');
    $('#Container--main_text').addClass('animated fadeIn slow');
+
    var wndw = $(window);
    wndw.scroll(function () {
-      console.log($(window).scrollTop());
+      // console.log($(wndw).scrollTop());
       var $main = $(this).scrollTop();
-      var $projectContainer = $('.CaseStudy');
-      var $highLine = $('#HighLine');
-      var $jumpbox = $('#Jumpbox');
-      var $propel = $('#Propel');
-      var $mindbrush = $('#Mindbrush');
-      var $goldman = $('#Goldman');
-      var $fei = $('#FEI');
-
       var project1 = 600;
       var project2 = 1200;
       var project3 = 1800;
@@ -61,16 +28,18 @@ $(function() {
       var writings = 4400;
       var contact = 5200;
 
-   // console.log($("#Jumpbox").offset().top);
-   // $window = $(window);
-      if ($main >= $('#Elliewood--project').offset().top) {
-         $('#Menu--js').css('visibility', 'visible');
-         $('#Menu--js').css('opacity', '1');
+      if ($main >= $('#portfolio').offset().top) {
+         $('.Menu--js').css('visibility', 'visible');
+         $('.Menu--js').css('opacity', '1');
+         $('.Menu--main').css('visibility', 'hidden');
+         $('.Menu--main').css('opacity', '0');
       }
 
-      if ($main < $('#Elliewood--project').offset().top) {
-         $('#Menu--js').css('visibility', 'hidden');
-         $('#Menu--js').css('opacity', '0');
+      if ($main < $('#portfolio').offset().top) {
+         $('.Menu--js').css('visibility', 'hidden');
+         $('.Menu--js').css('opacity', '0');
+         $('.Menu--main').css('visibility', 'visible');
+         $('.Menu--main').css('opacity', '1');
       }
 
       if ($main > project1) {
@@ -112,42 +81,3 @@ $(function() {
       }
   });
 });
-
-/**
- * This was built using the scrollie jQuery Plugin
- * https://github.com/Funsella/jquery-scrollie
- */
-
-// dont use this for final version
-
-// $( window ).ready(function() {
-
-//     // var wHeight = $(window).height();
-
-//     $('.Container')
-//       // .height(wHeight)
-//       .scrollie({
-//         scrollOffset : -50,
-//         scrollingInView : function(elem) {
-
-//           var bgColor = elem.data('background-color');
-
-//           $('.Container--project').css('background-color', bgColor);
-
-//         }
-//       });
-
-//       // $('.Pane')
-//       //   .height(wHeight)
-//       //   .scrollie({
-//       //     scrollOffset : -50,
-//       //     scrollingInView : function(elem) {
-//       //
-//       //       var bgColorInner = elem.data('background-color');
-//       //
-//       //       $('.Pane').css('background-color', bgColorInner);
-//       //
-//       //     }
-//       //   });
-
-//   });
